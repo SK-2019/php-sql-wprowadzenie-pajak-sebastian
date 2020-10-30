@@ -49,7 +49,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
 
 echo("<h2>Zadanie 3</h2>");
-echo("<h3>SELECT * FROM pracownicy where (dzial=1 or dzial=2) and (imie like "%a")</h3>");
+echo("<h3>SELECT * FROM pracownicy where (dzial=1 or dzial=2) and (imie like '%a')</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query('SELECT * FROM pracownicy where (dzial=1 or dzial=2) and (imie like "%a")');
         echo("<table border=1>");
@@ -65,7 +65,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
 
 echo("<h2>Zadanie 4</h2>");
-echo("<h3>SELECT * FROM pracownicy where imie like "%a"</h3>");
+echo("<h3>SELECT * FROM pracownicy where imie like '%a'</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query('SELECT * FROM pracownicy where imie like "%a"');
         echo("<table border=1>");
