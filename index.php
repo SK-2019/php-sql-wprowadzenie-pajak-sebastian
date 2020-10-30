@@ -1,4 +1,6 @@
 <?php
+echo("<h1>Sebastian Pająk</h1>");
+echo("<h2>Tabela pracownicy</h2>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query('SELECT * FROM pracownicy');
         echo("<table border=1>");
@@ -12,6 +14,5 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                 echo("</tr>");
             }
         echo("</table>");
-echo("<h1>Sebastian Pająk</h1>");
 
 ?>
