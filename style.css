@@ -43,5 +43,5 @@ th, td{
     border-left: 1px solid green;
     border-right: 1px solid green;
 }
-tr:nth-child(even){background-color: lightyellow;}
+tr:nth-child(even){background-color:lightblue;}
 tr:hover{background-color:wheat;}
