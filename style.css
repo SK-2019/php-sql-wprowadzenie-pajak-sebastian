@@ -17,3 +17,6 @@ th {
 .monospace {
   font-family: "Lucida Console", Courier, monospace;
 }
+table {
+  border=collapse: collapse;
+}
