@@ -24,10 +24,10 @@ h3 {
 }
 
 table, th, td{
-    border:1px solid black;
+    border:1px solid blue;
 }
 table{
-    background-color:purple;
+    background-color:lightpurple;
 }
 th{
     height: 25px;
