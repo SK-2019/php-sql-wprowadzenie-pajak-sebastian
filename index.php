@@ -3,7 +3,6 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
 <?php
 echo("<h1>Sebastian Pająk</h1>");
 echo("<h2>Tabela pracownicy</h2>");
