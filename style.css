@@ -6,3 +6,11 @@ h1 {
   color: navy;
   margin-left: 20px;
 }
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+  color: orange;
+}
+</style>
+</head>
