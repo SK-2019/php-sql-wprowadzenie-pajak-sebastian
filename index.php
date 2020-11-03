@@ -7,7 +7,7 @@
 echo("<h1>Sebastian Pająk</h1>");
 echo("<h2>Tabela pracownicy</h2>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
- $result=$conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" where dzial = id_org');
+ $result=$conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" WHERE dzial = id_org');
   require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
