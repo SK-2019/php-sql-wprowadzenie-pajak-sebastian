@@ -146,5 +146,20 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                 echo("</tr>");
             }
         echo("</table>");
+ 
+ echo("<h2>Zadanie 9</h2>");
+ $sql = "SELECT max(zarobki) as max pracownicy, organizacja WHERE (dzial = id_org)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>max</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["max"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
 
 ?>
