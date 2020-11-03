@@ -109,10 +109,25 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
      
-        echo("<th>suma_zarobki sfgdfgdfg</th>");
+        echo("<th>suma_zarobki</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
                     echo("<td>".$row["suma_zarobki"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Zadanie 7</h2>");
+ $sql = "SELECT count(imie) as liczba_kobiet FROM pracownicy, organizacja WHERE (dzial = id_org and imie like 'a%')";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>liczba_kobiet</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["liczba_kobiet"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
