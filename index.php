@@ -22,17 +22,17 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
 
 echo("<h2>Zadanie 1</h2>");
-echo("<h3>SELECT * FROM pracownicy where dzial = 1</h3>");
+echo("<h3>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" WHERE (dzial = id_org) and  (dzial = 1)</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
- $result=$conn->query('SELECT * FROM pracownicy where dzial = 1');
+ $result=$conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" WHERE (dzial = id_org) and  (dzial = 1)');
         echo("<table border=1>");
-        echo("<th>id</th>");
         echo("<th>imie</th>");
-        echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
+        echo("<th>data_urodzenia</th>");
+        echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
