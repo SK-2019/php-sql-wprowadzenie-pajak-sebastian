@@ -131,5 +131,20 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                 echo("</tr>");
             }
         echo("</table>");
+ 
+ echo("<h2>Zadanie 8</h2>");
+ $sql = "SELECT avg(zarobki) as srednia FROM pracownicy, organizacja WHERE (dzial = id_org) and (dzial=1 or dzial=2)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>srednia</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["srednia"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
 
 ?>
