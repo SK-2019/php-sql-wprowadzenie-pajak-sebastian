@@ -46,6 +46,3 @@ th, td{
 tr:nth-child(even){background-color:lightblue;}
 tr:hover{background-color:wheat;}
 
-table{
-  border-collapse: collapse;
-}
