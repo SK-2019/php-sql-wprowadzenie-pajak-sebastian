@@ -53,33 +53,4 @@ tr:hover{background-color:wheat;}
     top: 20%;
     left: 20%;
     position: relative;
-    animation: animacja 3s infinite;
-border-radius: 500px;
-box-shadow: 50px 10px rgb(255, 7, 255);
-
 }
-
-    @keyframes animacja {
-        0%{
-            transform: rotate(0deg);
-            left: 0%;
-        }
-    100%{
-        transform: rotate(360deg);
-        left: 120%;
-        transform: rotateY(720deg);
-        
-    }
-    }
-
-    @keyframes animacja2 {
-       
-    100%{
-        left: 0%;
-
-    }
-    }
-.obraz:hover {
-    animation: animacja2 0s;
-}
-
