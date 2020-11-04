@@ -163,4 +163,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
 
 ?>
-<a href="#"><element class="obraz" src="yma.png"></a>
+<a href="#"><img class="obraz" src="yma.png"></a>
