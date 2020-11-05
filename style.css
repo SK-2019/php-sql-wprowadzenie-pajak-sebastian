@@ -49,7 +49,7 @@ tr:hover{background-color:wheat;}
 
 .obraz {
     height: 250px;
-    width: 250px;
+    width: 100px;
     top: 50%;
     left: 20%;
     position: absolute;
