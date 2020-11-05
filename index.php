@@ -3,9 +3,9 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
-    <div class="nav"> 
+   <div class="nav"> 
     <h2>Linki</h2>
+    <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
     <a href="orgPracownicy.php">Org i Prac</a>
     <a href="agregat.php">Funkcje agregujące</a>
 </div>    
