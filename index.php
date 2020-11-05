@@ -3,7 +3,12 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<?php
+<div class="nav"> 
+    nawigacja i tu beda linki
+    <a href="orgPracownicy.php">Org i Prac</a>
+    <a href="agregat.php">Funkcje agregujące</a>
+</div>    
+ <?php
  
 echo("<h1>Sebastian Pająk</h1>");
 echo("<h2>Tabela pracownicy</h2>");
