@@ -48,8 +48,8 @@ body {
   tr:hover{background-color:wheat;}
   
   .obraz {
-      height: 250px;
-      width: 250px;
+      height: 500px;
+      width: 500px;
       top: 10%;
       right: 10%;
       position: absolute;
