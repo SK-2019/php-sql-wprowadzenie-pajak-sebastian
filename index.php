@@ -166,12 +166,5 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 <a href="#"><img class="obraz" src="yma.png"></a>
  
 
-<h2>My First JavaScript</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
 
 
