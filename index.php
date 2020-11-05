@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <div class="nav"> 
-    echo("<h1>Linki</h1>");
+    <h1>Linki</h1>
     <a href="orgPracownicy.php">Org i Prac</a>
     <a href="agregat.php">Funkcje agregujące</a>
 </div>    
