@@ -1,3 +1,3 @@
 <?php
-agregat.php
+echo("agregat.php")
 >?
