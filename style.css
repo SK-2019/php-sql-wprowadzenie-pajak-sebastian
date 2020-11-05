@@ -50,7 +50,7 @@ tr:hover{background-color:wheat;}
 .obraz {
     height: 250px;
     width: 1000px;
-    top: 20%;
+    top: 50%;
     left: 20%;
     position: absolute;
 }
