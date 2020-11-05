@@ -3,7 +3,8 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<div class="nav"> 
+<h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
+    <div class="nav"> 
     <h2>Linki</h2>
     <a href="orgPracownicy.php">Org i Prac</a>
     <a href="agregat.php">Funkcje agregujące</a>
