@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <?php
+ <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h3>
 echo("<h1>Sebastian Pająk</h1>");
 echo("<h2>Tabela pracownicy</h2>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
