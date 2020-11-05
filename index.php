@@ -4,14 +4,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <?php
-
+ 
 echo("<h1>Sebastian Pająk</h1>");
-<div class="nav"> 
-    nawigacja i tu beda linki
-    <a href="orgPracownicy.php">Org i Prac</a>
-    <a href="agregat.php">Funkcje agregujace</a>
-</div>    
-    echo("<h2>Tabela pracownicy</h2>");
+echo("<h2>Tabela pracownicy</h2>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org');
   require("conn.php");
@@ -173,7 +168,3 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  <a href="#"><img class="obraz2" src="kacper.png"></a>
  <a href="#"><img class="obraz3" src="kacper2.png"></a>
  
- 
-
-
-
