@@ -5,7 +5,7 @@
 </head>
   
   <?php
-  echo("<h1>Sebastian Pająk</h1>");
+
 echo("<h2>Pracownicy z działu 2</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 2)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
@@ -23,7 +23,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
   
-  echo("<h1>Sebastian Pająk</h1>");
+  
 echo("<h2>Pracownicy z działu 2 i z działu 3</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 2 or dzial = 3)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
@@ -41,7 +41,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
   
-  echo("<h1>Sebastian Pająk</h1>");
+  
 echo("<h2>Pracownicy tylko z zarobkami mniejszymi niz 30</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (zarobki<30)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
