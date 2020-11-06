@@ -56,4 +56,28 @@ body {
   }
   
   
+
+
+
+.link{
+    text-decoration: none;
+    padding:10px;
+    background:black;
+    color:white;
+}
+.link:hover{background-color:gray;}
+.item{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nav1{
+    display:flex;
+    justify-content: center;
+    width: 11,5%;
+    height: 40px;
+    background:black;
+    position:absolute;
+    left:3%;
+}
   
