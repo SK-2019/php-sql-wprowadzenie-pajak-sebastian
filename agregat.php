@@ -135,7 +135,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
  
  echo("<h2>Suma zarobków w poszczególnych działach</h2>");
- $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial";
+ $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY nazwa_dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
@@ -164,36 +164,40 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
  
- echo("<h2>Średnie zarobków w poszczególnych działach</h2>");
- $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie not like '%a') GROUP BY dzial";
+ echo("<h2>Suma zarobków w poszczególnych działach mniejsza od 28</h2>");
+ $sql = "SELECT sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     echo("<th>nazwa_dzial</th>");
-        echo("<th>avg</th>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>sum</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["avg"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["sum"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
  
- echo("<h2>Jak wyłączyć 'ONLY_FULL_GROUP_BY'</h2>");
- $sql = "SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''))SELECT count(id_pracownicy),nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 1";
+ echo("<h2>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h2>");
+ $sql = "SELECT sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     echo("<th>nazwa_dzial</th>");
-        echo("<th>count</th>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>sum</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["count"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["sum"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
+
  
+
+ 
+ /
  
  
 ?>
