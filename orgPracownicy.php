@@ -24,7 +24,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
   
   echo("<h2>Pracownicy tylko z dzialu 1 i 4</h2>");
-$sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 1 or dzial =4";
+$sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 1 or dzial =4");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
   require("conn.php");
