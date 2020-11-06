@@ -143,7 +143,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
   
   echo("<h2>Mezczyzni posortowani rosnaco: po nazwie dzialu a nastepnie po wysokosci zarobkow</h2>");
- $sql = "SELECT * FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie not like '%a') and order by nazwa_dzial asc, zarobki asc";
+ $sql = "SELECT * FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie not like '%a') order by nazwa_dzial asc, zarobki asc";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
