@@ -150,7 +150,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
  
  echo("<h2>Ilość pracowników w poszczególnych działach</h2>");
- $sql = "SELECT count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial";
+ $sql = "SELECT nazwa_dzial, count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
@@ -165,7 +165,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
  
  echo("<h2>Suma zarobków w poszczególnych działach mniejsza od 28</h2>");
- $sql = "SELECT sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
+ $sql = "SELECT nazwa_dzial, sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
@@ -180,7 +180,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
  
  echo("<h2>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h2>");
- $sql = "SELECT sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
+ $sql = "SELECT nazwa_dzial, sum(zarboki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki<28) GROUP BY dzial";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
