@@ -58,4 +58,81 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                 echo("</tr>");
             }
         echo("</table>");
+ 
+ echo("<h2>Suma zarobkow mezczyzn</h2>");
+ $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org and imie not like 'a%')";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>avg</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["avg"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Srednia zarobkow pracownikow z dzialu 4</h2>");
+ $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org and dzial = 4)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>avg</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["avg"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Średnia zarobków mężczyzn z działu 1 i 2</h2>");
+ $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org) and (dzial = 1 or dzial =2)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>avg</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["avg"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Ilu jest wszystkich pracowników</h2>");
+ $sql = "SELECT count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>count</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["count"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Ile kobiet pracuje łącznie w działach 1 i 3</h2>");
+ $sql = "SELECT count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie like '%a') and (dzial = 1 or dzial = 3)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>count</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["count"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ 
 ?>
