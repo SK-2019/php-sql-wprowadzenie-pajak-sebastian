@@ -165,7 +165,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
  
  echo("<h2>Suma zarobków w poszczególnych działach mniejsza od 28</h2>");
- $sql = "SELECT nazwa_dzial, sum(zarobki) as sum FROM pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28";
+ $sql = "SELECT nazwa_dzial, sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial HAVING sum(zarobki) < 28";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
