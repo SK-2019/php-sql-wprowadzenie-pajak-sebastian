@@ -174,7 +174,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>avg</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["avg"]."</td>");
+                    echo("<td>".$row["dzial"]."</td><td>".$row["avg"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
