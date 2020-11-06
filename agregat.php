@@ -134,5 +134,66 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
  
+ echo("<h2>Suma zarobków w poszczególnych działach</h2>");
+ $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>sum</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["sum"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Ilość pracowników w poszczególnych działach</h2>");
+ $sql = "SELECT count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>count</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["count"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Średnie zarobków w poszczególnych działach</h2>");
+ $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie not like '%a') GROUP BY dzial";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>avg</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["avg"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ echo("<h2>Jak wyłączyć 'ONLY_FULL_GROUP_BY'</h2>");
+ $sql = "SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''))SELECT count(id_pracownicy),nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 1";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+     
+        echo("<th>count</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["count"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+ 
+ 
  
 ?>
