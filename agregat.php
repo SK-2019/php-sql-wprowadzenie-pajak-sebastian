@@ -140,11 +140,11 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     
+        echo("<th>nazwa_dzial</th>");
         echo("<th>sum</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["sum"]."</td>");
+                    echo("<td>".$row["sum"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -155,11 +155,11 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     
+        echo("<th>nazwa_dzial</th>");
         echo("<th>count</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["count"]."</td>");
+                    echo("<td>".$row["count"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -170,11 +170,11 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     
+     echo("<th>nazwa_dzial</th>");
         echo("<th>avg</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["avg"]."</td>");
+                    echo("<td>".$row["avg"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -185,11 +185,11 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     
+     echo("<th>nazwa_dzial</th>");
         echo("<th>count</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["count"]."</td>");
+                    echo("<td>".$row["avg"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
