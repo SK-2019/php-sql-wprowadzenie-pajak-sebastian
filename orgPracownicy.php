@@ -5,6 +5,7 @@
 </head>
   <div class="nav"> 
     <h2>Linki</h2>
+    <h4><a href="https://sebol.herokuapp.com/"><b>STRONA GLOWNA</b></a></h4>
     <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
     <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a>
       <h6>   </h6>
