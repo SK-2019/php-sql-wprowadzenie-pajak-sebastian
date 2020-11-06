@@ -144,7 +144,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>sum</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["sum"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["sum"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -159,7 +159,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>count</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["count"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["count"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -174,7 +174,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>avg</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["avg"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["avg"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -189,7 +189,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>count</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["avg"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["count"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
