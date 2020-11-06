@@ -9,6 +9,8 @@
     <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a>
       <h6>   </h6>
     <a href="agregat.php">FUNKCJE AGREGUJĄCE</a>
+      <h6>   </h6>
+    <a href="pracownicy.php">PRACOWNICY</a>
 </div>    
  <?php
  
