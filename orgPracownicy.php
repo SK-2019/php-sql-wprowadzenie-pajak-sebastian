@@ -131,11 +131,13 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
-     
-        echo("<th>sum</th>");
+        echo("<th>imie</th>");
+        echo("<th>zarobki</th>");
+        echo("<th>data_urodzenia</th>");
+        echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["sum"]."</td>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
