@@ -195,7 +195,20 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
 
  
-
+echo("<h2>Ilość pracowników w poszczególnych działach większa od 2</h2>");
+ $sql = "SELECT nazwa_dzial, count(imie) as count FROM pracownicy, organizacja WHERE (dzial = id_org) GROUP BY dzial HAVING count(imie)>2";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>count</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["count"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
  
  
  
