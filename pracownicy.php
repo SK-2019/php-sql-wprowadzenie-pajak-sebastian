@@ -12,6 +12,8 @@
     <a href="agregat.php">FUNKCJE AGREGUJĄCE</a>
       <h6>   </h6>
     <a href="pracownicy.php">PRACOWNICY</a>
+    <h6>   </h6>
+  <a href="dataiczas.php">DATA I CZAS</a>
 </div>    
   
   <?php
