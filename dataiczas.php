@@ -22,12 +22,14 @@ echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
+        echo("<th>id_pracownicy</th>");
         echo("<th>nazwa_dzial</th>");
         echo("<th>imie</th>");
+        echo("<th>zarobki</th>");
         echo("<th>wiek</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td><td>".$row["wiek"]."</td>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["wiek"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
