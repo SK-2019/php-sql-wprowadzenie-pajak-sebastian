@@ -52,6 +52,24 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
    
+   echo("<h2>Suma lat wszystkich pracownikow</h2>");
+ $sql = "SELECT sum(YEAR(curdate())-YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (dzial = id_org)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<th>id_pracownicy</th>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>imie</th>");
+        echo("<th>zarobki</th>");
+        echo("<th>suma</th>");
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["suma"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+   
    
    
    
