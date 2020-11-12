@@ -144,20 +144,20 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                       echo("</table>");
 
                       echo("<h2>Najmłodsi pracownicy z działu: handel i serwis (Imię, nazwa_dział, wiek)</h2>");
-                      $sql = "SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial and (nazwa_dzial = 'handel' OR nazwa_dzial = 'serwis') GROUP BY dzial";
+                      $sql = "Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial";
                      echo("<h3>".$sql."</h3>");
                      $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                       $result=$conn->query($sql);
                              echo("<table border=1>");
-                             echo("<th>imie</th>");
-                             echo("<th>min</th>");
+                             echo("<th>minwiek</th>");
                              echo("<th>nazwa_dzial</th>");
+                             echo("<th>imie</th>");
                              
                         
                              
                                  while($row=$result->fetch_assoc()) {
                                      echo("<tr>");
-                                         echo("<td>".$row["imie"]."</td><td>".$row["min"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                                         echo("<td>".$row["minwiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
                                      echo("</tr>");
                                  }
                              echo("</table>");
