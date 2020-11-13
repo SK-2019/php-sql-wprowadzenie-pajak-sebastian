@@ -171,8 +171,58 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                       echo("</table>");
 
                       
+                      
+                      echo("<h2>Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)</h2>");
+               $sql1 = "SET lc_time_names = 'pl_PL'";
+               $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
+              echo("<h3>".$sql2."</h3>");
+              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+               $result=$conn->query($sql1);
+               $result=$conn->query($sql2);
+               require("conn.php");
+                      echo("<table border=1>");
+                      echo("<th>data</th>");
+                      
+                          while($row=$result->fetch_assoc()) {
+                              echo("<tr>");
+                                  echo("<td>".$row["data"]."</td>");
+                              echo("</tr>");
+                          }
+                      echo("</table>");
 
                       
+                      echo("<h2>Wyświetl nazwy miesięcy w dacie urodzenia</h2>");
+                      $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') as format FROM pracownicy";
+                     echo("<h3>".$sql."</h3>");
+                     $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                      $result=$conn->query($sql);
+                      require("conn.php");
+                             echo("<table border=1>");
+                             echo("<th>format</th>");
+                             
+                                 while($row=$result->fetch_assoc()) {
+                                     echo("<tr>");
+                                         echo("<td>".$row["format"]."</td>");
+                                     echo("</tr>");
+                                 }
+                             echo("</table>");
+                      
+
+                             echo("<h2>Obecna, dokładna godzina (z dokładnością do milisekund)</h2>");
+                             $sql = "SELECT curtime(4)";
+                            echo("<h3>".$sql."</h3>");
+                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                             $result=$conn->query($sql);
+                             require("conn.php");
+                                    echo("<table border=1>");
+                                    echo("<th>curtime(4)</th>");
+                                    
+                                        while($row=$result->fetch_assoc()) {
+                                            echo("<tr>");
+                                                echo("<td>".$row["curtime(4)"]."</td>");
+                                            echo("</tr>");
+                                        }
+                                    echo("</table>");
                                                    
   
   ?>
