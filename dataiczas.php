@@ -223,6 +223,154 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                                             echo("</tr>");
                                         }
                                     echo("</table>");
+
+                                    echo("<h2>Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ  (2012-styczeń-poniedziałek)</h2>");
+                                        
+                                    $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy";
+                            echo("<h3>".$sql."</h3>");
+                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                             $result=$conn->query($sql);
+                             require("conn.php");
+                                    echo("<table border=1>");
+                                    echo("<th>data_urodzenia</th>");
+                                    
+                                        while($row=$result->fetch_assoc()) {
+                                            echo("<tr>");
+                                                echo("<td>".$row["format"]."</td>");
+                                            echo("</tr>");
+                                        }
+                                    echo("</table>");
+
+                                    
+                                    
+                                    echo("<h2>Ile godzin, minut już żyjesz</h2>");   
+                                    $sql = "SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy";
+                            echo("<h3>".$sql."</h3>");
+                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                             $result=$conn->query($sql);
+                             require("conn.php");
+                                    echo("<table border=1>");
+                                    echo("<th>imie</th>");
+                                    echo("<th>dni</th>");
+                                    echo("<th>godziny</th>");
+                                    echo("<th>minuty</th>");
+                                    
+                                        while($row=$result->fetch_assoc()) {
+                                            echo("<tr>");
+                                                echo("<td>".$row["imie"]."</td><td>".$row["dni"]."</td><td>".$row["godziny"]."</td><td>".$row["minuty"]."</td>");
+                                            echo("</tr>");
+                                        }
+                                    echo("</table>");
+                                    
+                                    
+                                    echo("<h2>W którym dniu roku urodziłeś się / urodziłaś się</h2>");   
+                                    $sql = "SELECT DATE_FORMAT('2003-10-11', '%j') as NrDniaRoku_Urodzenie";
+                            echo("<h3>".$sql."</h3>");
+                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                             $result=$conn->query($sql);
+                             require("conn.php");
+                                    echo("<table border=1>");
+                                    echo("<th>NrDniaRoku_Urodzenie</th>");
+                                    
+                                    
+                                        while($row=$result->fetch_assoc()) {
+                                            echo("<tr>");
+                                                echo("<td>".$row["NrDniaRoku_Urodzenie"]."</td>");
+                                            echo("</tr>");
+                                        }
+                                    echo("</table>");
+
+
+                                    echo("<h2>Ilu pracowników urodziło się w poniedziałek</h2>");
+               $sql1 = "SET lc_time_names = 'pl_PL'";
+               $sql2 = "SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as IloscPracUr_Pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'";
+              echo("<h3>".$sql2."</h3>");
+              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+               $result=$conn->query($sql1);
+               $result=$conn->query($sql2);
+               require("conn.php");
+                      echo("<table border=1>");
+                      echo("<th>IloscPracUr_Pon</th>");
+                      
+                          while($row=$result->fetch_assoc()) {
+                              echo("<tr>");
+                                  echo("<td>".$row["IloscPracUr_Pon"]."</td>");
+                              echo("</tr>");
+                          }
+                      echo("</table>");
+
+                      
+                      echo("<h2>Pracownicy z nazwami dni tygodnia, w których się urodzili z sortowaniem od Poniedziałku do Niedzieli</h2>");
+                      $sql1 = "SET lc_time_names = 'pl_PL'";
+                      $sql2 = "SELECT
+                      DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia
+                 FROM
+                      pracownicy
+                 ORDER BY 
+                      CASE
+                           
+                           WHEN dzien = 'Poniedziałek' THEN 1
+                           WHEN dzien = 'Wtorek' THEN 2
+                           WHEN dzien = 'Środa' THEN 3
+                           WHEN dzien= 'Czwartek' THEN 4
+                           WHEN dzien = 'Piątek' THEN 5
+                           WHEN dzien = 'Sobota' THEN 6
+                           WHEN dzien = 'Niedziela' THEN 7
+                      END ASC";
+                     echo("<h3>".$sql2."</h3>");
+                     $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                      $result=$conn->query($sql1);
+                      $result=$conn->query($sql2);
+                      require("conn.php");
+                             echo("<table border=1>");
+                             echo("<th>dzien</th>");
+                             echo("<th>imie</th>");
+                             echo("<th>data_urodzenia</th>");
+                             
+                                 while($row=$result->fetch_assoc()) {
+                                     echo("<tr>");
+                                         echo("<td>".$row["dzien"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td>");
+                                     echo("</tr>");
+                                 }
+                             echo("</table>");
+
+
+                             echo("<h2>Ilu pracowników urodziło się w poszczególne dni tygodnia (wpisz w pierwszej kolumnie nazwę dnia tygodnia a w drugiej ile osób się wtedy urodziło). Dni powinny być posortowane od Poniedziałku do Niedzieli</h2>");
+               $sql1 = "SET lc_time_names = 'pl_PL'";
+               $sql2 = "SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as dzien FROM pracownicy ORDER BY 
+               CASE 
+                    WHEN dzien = 'Poniedziałek' THEN 1
+                    WHEN dzien = 'Wtorek' THEN 2
+                    WHEN dzien = 'Środa' THEN 3
+                    WHEN dzien= 'Czwartek' THEN 4
+                    WHEN dzien = 'Piątek' THEN 5
+                    WHEN dzien = 'Sobota' THEN 6
+                    WHEN dzien = 'Niedziela' THEN 7
+               END ASC";
+              echo("<h3>".$sql2."</h3>");
+              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+               $result=$conn->query($sql1);
+               $result=$conn->query($sql2);
+               require("conn.php");
+                      echo("<table border=1>");
+                      echo("<th>Poniedziałek</th>");
+                      echo("<th>Wtorek</th>");
+                      echo("<th>Środa</th>");
+                      echo("<th>Czwartek</th>");
+                      echo("<th>Piątek</th>");
+                      echo("<th>Sobota</th>");
+                      echo("<th>Niedziela</th>");
+                          while($row=$result->fetch_assoc()) {
+                              echo("<tr>");
+                                  echo("<td>".$row["dzien"]."</td><td>".$row["dzien"]."</td><td>".$row["dzien"]."</td><td>".$row["dzien"]."</td><td>".$row["dzien"]."</td><td>".$row["dzien"]."</td><td>".$row["dzien"]."</td>");
+                              echo("</tr>");
+                          }
+                      echo("</table>");
+
+                                    
+
+
+                                    
                                                    
   
   ?>
