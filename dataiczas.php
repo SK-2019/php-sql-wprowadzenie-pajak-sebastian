@@ -264,7 +264,7 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                                     
                                     
                                     echo("<h2>W którym dniu roku urodziłeś się / urodziłaś się</h2>");   
-                                    $sql = "SELECT DATE_FORMAT('2003-10-11', '%j') as NrDniaRoku_Urodzenie";
+                                    $sql = "SELECT DATE_FORMAT('2003-11-10', '%j') as NrDniaRoku_Urodzenie";
                             echo("<h3>".$sql."</h3>");
                             $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                              $result=$conn->query($sql);
