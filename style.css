@@ -55,6 +55,15 @@ body {
       position: absolute;
   }
   
+a {
+text-decoration: none;
+background-color: #ff9999;
+padding: 1rem;
+}
+
+a:hover {
+  background-color: #ffe6e6;
+  }
   
 
   
