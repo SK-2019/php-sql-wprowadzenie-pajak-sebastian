@@ -6,13 +6,13 @@
    <div class="nav"> 
     <h2>Linki</h2>
     <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
-    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a>
-      <h6>   </h6>
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a>
-      <h6>   </h6>
-    <a href="pracownicy.php">PRACOWNICY</a>
-      <h6>   </h6>
-      <a href="dataiczas.php">DATA I CZAS</a>
+    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> |
+     
+    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> |
+      
+    <a href="pracownicy.php">PRACOWNICY</a> |
+     
+      <a href="dataiczas.php">DATA I CZAS</a> |
 </div>    
  <?php
  
