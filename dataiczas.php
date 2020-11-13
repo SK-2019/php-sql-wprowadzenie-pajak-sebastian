@@ -161,12 +161,14 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                $result=$conn->query($sql);
                require("conn.php");
                       echo("<table border=1>");
-                      
+                      echo("<th>imie</th>");
+                      echo("<th>dzial</th>");
+                      echo("<th>zarobki</th>");
                       echo("<th>format</th>");
                       
                           while($row=$result->fetch_assoc()) {
                               echo("<tr>");
-                                  echo("<td>".$row["format"]."</td>");
+                                  echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["format"]."</td>");
                               echo("</tr>");
                           }
                       echo("</table>");
@@ -199,11 +201,14 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                       $result=$conn->query($sql);
                       require("conn.php");
                              echo("<table border=1>");
+                            
+                             echo("<th>imie</th>");
+                             echo("<th>dzial</th>");
+                             echo("<th>zarobki</th>");
                              echo("<th>format</th>");
-                             
                                  while($row=$result->fetch_assoc()) {
                                      echo("<tr>");
-                                         echo("<td>".$row["format"]."</td>");
+                                        echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["format"]."</td>");
                                      echo("</tr>");
                                  }
                              echo("</table>");
@@ -265,7 +270,7 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                                     
                                     
                                     echo("<h2>W którym dniu roku urodziłeś się / urodziłaś się</h2>");   
-                                    $sql = "SELECT DATE_FORMAT('2003-11-10', '%j') as NrDniaRoku_Urodzenie";
+                                    $sql = "SELECT DATE_FORMAT('2003-10-11', '%j') as NrDniaRoku_Urodzenie";
                             echo("<h3>".$sql."</h3>");
                             $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                              $result=$conn->query($sql);
@@ -367,6 +372,9 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                               echo("</tr>");
                           }
                       echo("</table>");
+
+
+                      
 
                                     
 
