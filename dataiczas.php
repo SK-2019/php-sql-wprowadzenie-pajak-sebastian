@@ -24,6 +24,7 @@ echo("<h2>Wiek poszczególnych pracowników (w latach)</h2>");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>nazwa_dzial</th>");
@@ -42,6 +43,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>nazwa_dzial</th>");
@@ -60,6 +62,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         
         echo("<th>suma</th>");
@@ -75,6 +78,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         
         echo("<th>suma</th>");
@@ -90,6 +94,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
        echo("<h3>".$sql."</h3>");
        $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         $result=$conn->query($sql);
+        require("conn.php");
                echo("<table border=1>");
                
                echo("<th>suma</th>");
@@ -105,6 +110,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
               echo("<h3>".$sql."</h3>");
               $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                $result=$conn->query($sql);
+               require("conn.php");
                       echo("<table border=1>");
                       
                       echo("<th>avg</th>");
@@ -121,6 +127,7 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
        echo("<h3>".$sql."</h3>");
        $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         $result=$conn->query($sql);
+        require("conn.php");
                echo("<table border=1>");
                
                echo("<th>suma</th>");
@@ -136,6 +143,7 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
               echo("<h3>".$sql."</h3>");
               $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                $result=$conn->query($sql);
+               require("conn.php");
                       echo("<table border=1>");
                       echo("<th>Wiek</th>");
                       echo("<th>nazwa_dzial</th>");
@@ -146,23 +154,25 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                           }
                       echo("</table>");
 
-                      echo("<h2>Najmłodsi pracownicy z działu: handel i serwis (Imię, nazwa_dział, wiek)</h2>");
-                      $sql = "Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial";
-                     echo("<h3>".$sql."</h3>");
-                     $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
-                      $result=$conn->query($sql);
-                             echo("<table border=1>");
-                             echo("<th>minwiek</th>");
-                             echo("<th>nazwa_dzial</th>");
-                             echo("<th>imie</th>");
-                             
-                        
-                             
-                                 while($row=$result->fetch_assoc()) {
-                                     echo("<tr>");
-                                         echo("<td>".$row["minwiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
-                                     echo("</tr>");
-                                 }
-                             echo("</table>");
+                      echo("<h2>Wyświetl nazwy dni w dacie urodzenia</h2>");
+               $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy";
+              echo("<h3>".$sql."</h3>");
+              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+               $result=$conn->query($sql);
+               require("conn.php");
+                      echo("<table border=1>");
+                      echo("<th>format</th>");
+                      
+                          while($row=$result->fetch_assoc()) {
+                              echo("<tr>");
+                                  echo("<td>".$row["format"]."</td>");
+                              echo("</tr>");
+                          }
+                      echo("</table>");
+
+                      
+
+                      
+                                                   
   
   ?>

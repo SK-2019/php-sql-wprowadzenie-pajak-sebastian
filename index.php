@@ -40,6 +40,7 @@ $sql = "SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
@@ -58,6 +59,7 @@ $sql = "SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
@@ -75,6 +77,7 @@ $sql = "SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
@@ -92,6 +95,7 @@ $sql = "SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
@@ -109,6 +113,7 @@ $sql = "SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
@@ -126,6 +131,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
      
         echo("<th>suma_zarobki</th>");
@@ -141,6 +147,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
      
         echo("<th>liczba_kobiet</th>");
@@ -156,6 +163,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
      
         echo("<th>srednia</th>");
@@ -171,6 +179,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
+ require("conn.php");
         echo("<table border=1>");
      
         echo("<th>max</th>");
