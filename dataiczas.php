@@ -161,6 +161,7 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                $result=$conn->query($sql);
                require("conn.php");
                       echo("<table border=1>");
+                      
                       echo("<th>format</th>");
                       
                           while($row=$result->fetch_assoc()) {
