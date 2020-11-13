@@ -9,11 +9,11 @@
   <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
     <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a>
      
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a>
+    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> |
       
-    <a href="pracownicy.php">PRACOWNICY</a>
+    <a href="pracownicy.php">PRACOWNICY</a> |
   
-  <a href="dataiczas.php">DATA I CZAS</a>
+  <a href="dataiczas.php">DATA I CZAS</a> |
 </div>    
 <?php
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
