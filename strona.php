@@ -1,5 +1,5 @@
 <?php
  
-echo("<h1>Sebastian Pająk</h1>");
+echo("<h1>strona.php</h1>");
 
 ?>
