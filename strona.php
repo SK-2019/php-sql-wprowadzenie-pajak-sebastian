@@ -5,7 +5,6 @@
 </head>
 
 <?php
-echo ("strona.php");
   
 echo($_POST['firstname']);
 echo($_POST['lastname']);
