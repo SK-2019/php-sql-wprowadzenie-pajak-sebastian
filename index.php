@@ -190,5 +190,12 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
 
+   
+   </div>
+     <form action="strona.php" method="POST">
+        <input type="text" name="name">
+        <input type="submit" value="wyślij w świat">
+   </form>
+      
 ?>
 <a href="#"><img class="obraz" src="yma.png"></a>
