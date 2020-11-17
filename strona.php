@@ -1,10 +1,10 @@
 <?php
 echo ("strona.php");
 
-echo($_POST['firstname']);</br>
-echo($_POST['lastname']);</br>
-echo($_POST['city']);</br>
-echo($_POST['phone']);</br>
+echo($_POST['firstname']);
+echo($_POST['lastname']);
+echo($_POST['city']);
+echo($_POST['phone']);
 
 
 ?>
