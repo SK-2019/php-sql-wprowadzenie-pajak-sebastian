@@ -16,7 +16,10 @@
       <a href="dataiczas.php">DATA I CZAS</a> |
 </div>    
      <form action="strona.php" method="POST">
-        <input type="text" name="name">
+        <input type="text" name="firstname"></br>
+        <input type="text" name="lastname"></br>
+        <input type="text" name="city"></br>
+        <input type="text" name="phone"></br>
         <input type="submit" value="wyślij w świat">
    </form>
    <?php
