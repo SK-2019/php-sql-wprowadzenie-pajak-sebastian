@@ -1,5 +1,7 @@
 <?php
- 
-echo("<h1>strona.php</h1>");
+echo ("strona.php");
+
+echo($_POST['name']);
+
 
 ?>
