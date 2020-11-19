@@ -48,9 +48,9 @@ body {
   tr:hover{background-color:wheat;}
   
   .obraz {
-      height: 200px;
-      width: 200px;
-      top: 50%;
+      height: 400px;
+      width: 400px;
+      top: 30%;
       right: 10%;
       position: absolute;
   }
@@ -68,4 +68,8 @@ a:hover {
 input {
 margin: 3px;
 }
-  
+
+li {
+color: black;
+margin-left: 20px;
+}

@@ -8,26 +8,26 @@
 </head>
    <div class="nav"> 
     <h2>Linki</h2>
-    <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4>
-      <h6> | </h6>
-    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> |
-     
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> |
+    <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4></br>
       
-    <a href="pracownicy.php">PRACOWNICY</a> |
+    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-      <a href="dataiczas.php">DATA I CZAS</a> |
+    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-      <a href="formularz.html">FORMULARZ</a>
+    <a href="pracownicy.php">PRACOWNICY</a> 
+     
+      <a href="dataiczas.php">DATA I CZAS</a> 
+      
+      <a href="formularz.html">FORMULARZ</a> 
       </br>
    </br>
 </br>
 </div>    
      <form action="strona.php" method="POST">
-        <input type="text" name="firstname"></br>
-        <input type="text" name="lastname"></br>
-        <input type="text" name="city"></br>
-        <input type="text" name="phone"></br>
+        <input type="text" name="firstname" placeholder="Imie"></br>
+        <input type="text" name="lastname" placeholder="Nazwisko"></br>
+        <input type="text" name="city" placeholder="Miasto"></br>
+        <input type="text" name="phone" placeholder="Telefon"></br>
         <input type="submit" value="wyślij w świat">
    </form>
    <?php
