@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>index php sebola</title>
 </head>
    <div class="nav"> 
     <h2>Linki</h2>
