@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width">
-  <title>index php sebola</title>
+  <title>strona glowna sebola</title>
 </head>
    <div class="nav"> 
     <h2>Linki</h2>
