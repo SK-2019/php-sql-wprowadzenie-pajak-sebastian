@@ -15,7 +15,7 @@
      
       <a href="dataiczas.php">DATA I CZAS</a> |
       
-      <a href="formularz.hmtl">FORMULARZ</a>
+      <a href="formularz.html">FORMULARZ</a>
 </div>    
      <form action="strona.php" method="POST">
         <input type="text" name="firstname"></br>
