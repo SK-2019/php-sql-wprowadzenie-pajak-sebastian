@@ -7,7 +7,7 @@
   <title>strona glowna sebola</title>
 </head>
 <?php
-echo("<h3>Sebastian Pająk</h3>");
+echo("<h5>Sebastian Pająk</h5>");
 ?>
    <div class="nav"> 
     
