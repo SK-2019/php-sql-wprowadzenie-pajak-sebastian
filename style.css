@@ -3,8 +3,8 @@ body {
   }
   
   h1 {
-    text-shadow: 25px 15px 3px darkblue;
-    color: navy;
+    text-shadow: 25px 15px 3px #b97d7d;
+    color: #f1dea4;
     margin-left: 20px;
   }
   
@@ -15,8 +15,8 @@ body {
   
   
   h2 {
-    color: gray;
-    margin-left: 20px;
+  border-left: 6px solid red;
+  background-color: lightgrey;    
   }
   
   h3 {
@@ -48,11 +48,12 @@ body {
   tr:hover{background-color:wheat;}
   
   .obraz {
-      height: 400px;
-      width: 400px;
-      top: 30%;
-      right: 10%;
+      height: 3000px;
+      width: 100%;
+      top: 0%;
+      right: 0%;
       position: absolute;
+      z-index: -1;
   }
   
 .obraz2 {
@@ -75,6 +76,8 @@ a {
 text-decoration: none;
 background-color: #ff9999;
 padding: 1rem;
+border: 1px solid black;
+  border-radius: 4px;
 }
 
 a:hover {
@@ -94,3 +97,48 @@ font-style: oblique;
 font-weight: 1000;
 }
 
+input{
+width: 140px;
+  padding: 10px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  
+}
+
+.orgPracownicy {
+      height: 3700px;
+      width: 100%;
+      top: 0%;
+      right: 0%;
+      position: absolute;
+      z-index: -1;
+}
+
+.agregat {
+      height: 2600px;
+      width: 100%;
+      top: 0%;
+      right: 0%;
+      position: absolute;
+      z-index: -1;
+}
+
+.pracownicy {
+      height: 100%;
+      width: 100%;
+      top: 0%;
+      right: 0%;
+      position: absolute;
+      z-index: -1;
+}
+
+.dataiczas {
+      height: 100%;
+      width: 100%;
+      top: 0%;
+      right: 0%;
+      position: absolute;
+      z-index: -1;
+}

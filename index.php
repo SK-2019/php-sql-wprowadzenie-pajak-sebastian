@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width">
   <title>strona glowna sebola</title>
 </head>
+<?php
+echo("<h1>Sebastian Pająk</h1>");
+?>
    <div class="nav"> 
-    <h2>Linki</h2>
+    </br>
+   
     <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4></br>
       
     <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
@@ -27,12 +31,13 @@
         <input type="text" name="firstname" placeholder="Imie"></br>
         <input type="text" name="lastname" placeholder="Nazwisko"></br>
         <input type="text" name="city" placeholder="Miasto"></br>
-        <input type="text" name="phone" placeholder="Telefon"></br>
+        <input type="number" name="phone" placeholder="Telefon"></br>
         <input type="submit" value="wyślij w świat">
    </form>
+   
    <?php
  
-echo("<h1>Sebastian Pająk</h1>");
+
 echo("<h2>Tabela pracownicy</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
@@ -209,4 +214,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  
       
 ?>
-<img class="obraz" src="yma.png">
+<img class="obraz" src="obraz.png">

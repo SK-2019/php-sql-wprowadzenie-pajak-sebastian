@@ -3,8 +3,11 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
+<?php
+echo("<h1>DATA I CZAS</h1>");
+?>
 <div class="nav"> 
-    <h2>Linki</h2>
+    </BR>
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
     <a href="index.php"><b>STRONA GŁOWNA</b></a></h4>
     </br>
@@ -380,10 +383,6 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                                       echo("</tr>");
                                   }
                               echo("</table>");
-                                    
-
-
-                                    
-                                                   
-  
+                                
   ?>
+  <img class="dataiczas" src="dataiczas.png">
