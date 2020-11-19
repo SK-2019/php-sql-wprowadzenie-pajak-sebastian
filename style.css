@@ -4,7 +4,7 @@ body {
   
   h1 {
     text-shadow: 25px 15px 3px #b97d7d;
-    color: #f1dea4;
+    color: wheat;
     margin-left: 20px;
   }
   
@@ -20,15 +20,16 @@ body {
   }
   
   h3 {
-    color: white;
+    color: #585963;
     margin-left: 20px;
+    font-size: 35px;
   }
   
   table, th, td{
       border:1px solid blue;
   }
   table{
-      background-color:lightpurple;
+      background-color: #ffffff;
   }
   th{
       height: 25px;
@@ -47,8 +48,8 @@ body {
   tr:nth-child(even){background-color:lightblue;}
   tr:hover{background-color:wheat;}
   
-  .obraz {
-      height: 3000px;
+  .index {
+      height: 100%;
       width: 100%;
       top: 0%;
       right: 0%;
@@ -141,4 +142,11 @@ width: 140px;
       right: 0%;
       position: absolute;
       z-index: -1;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
 }
