@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylee.css">
 </head>
+<style>
+        body {
+        background-image:url(https://images7.alphacoders.com/878/878080.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+  
+        }
+    </style>
 <?php
 echo("<h1>DATA I CZAS</h1>");
 ?>
@@ -385,4 +395,4 @@ echo("<h2>Suma lat pracowników w poszczególnych działach</h2>");
                               echo("</table>");
                                 
   ?>
-  <img class="dataiczas" src="dataiczas.png">
+  

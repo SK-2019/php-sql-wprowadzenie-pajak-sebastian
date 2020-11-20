@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylee.css">
 </head>
-<body background="orgPracownicy.png">
+
 
         <style>
-                body {
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-
-                }
-</style>
+        body {
+        background-image:url(https://get.wallhere.com/photo/1920x1080-px-blood-and-wine-CD-Projekt-RED-The-Witcher-The-Witcher-3-Wild-Hunt-video-games-1520999.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+  
+        }
+    </style>
+        
 
 <?php
 echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");

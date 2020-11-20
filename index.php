@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
   <title>strona glowna sebola</title>
 </head>
