@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>strona glowna sebola</title>
 </head>
+
 <style>
         body {
         background-image:url(https://images6.alphacoders.com/706/thumb-1920-706735.png);

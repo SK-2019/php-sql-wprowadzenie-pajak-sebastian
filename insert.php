@@ -21,7 +21,6 @@
   
         }
     </style>
-
 <?php
 echo("<h1>jestes w insert.php</h1>");
 
@@ -60,6 +59,7 @@ $conn->close();
 
 ?>
 <?php
+
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
@@ -71,11 +71,19 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>Data urodzenia</th>");
         
         
+        
        
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
-                echo("</tr>");
+                  
+                    echo("</tr>");
+                    
+                    
             }
+            
         echo("</table>");
-?>
+        ?>
+        
+</body>
+</html>
