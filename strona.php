@@ -6,13 +6,13 @@
 </html> 
   
 <?php
-include("conn.php");
-    echo("<li> imie: ".$_POST['firstname']."</li>");
-    echo("<li> nazwisko: ".$_POST['lastname']."</li>");
-    echo("<li> miasto: ".$_POST['city']."</li>");
-    echo("<li> numer tel: ".$_POST['phone']."</li>");
-$sql="INSERT INTO 'pracownicy'('id', 'imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES (null,'józef',2,23,'2001-10-23')";
-$conn->query($sql);
-
-?>
+        echo("Imie:".$_POST['imie']."<br>");
+        echo("Dzial:".$_POST['dzial']."<br>");
+        echo("Zarobki:".$_POST['zarobki']."<br>");
+        echo("Data:".$_POST['data_']); 
+      require_once("conn.php");
+      $sql =  "INSERT INTO pracownicy(id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['imie']."','".$_POST['dzial']."','".$_POST['zarobki']."','".$_POST['data_']."')";
+      mysqli_query($conn,$sql);
+      mysqli_close($conn);
+    ?>
 <img class="obraz3" src="obraz3.png">

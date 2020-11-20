@@ -27,13 +27,7 @@ echo("<h5>Sebastian Pająk</h5>");
    </br>
 </br>
 </div>    
-     <form action="strona.php" method="POST">
-        <input type="text" name="firstname" placeholder="Imie"></br>
-        <input type="text" name="lastname" placeholder="Nazwisko"></br>
-        <input type="text" name="city" placeholder="Miasto"></br>
-        <input type="number" name="phone" placeholder="Telefon"></br>
-        <input type="submit" value="wyślij w świat">
-   </form>
+     
    
    <?php
  
