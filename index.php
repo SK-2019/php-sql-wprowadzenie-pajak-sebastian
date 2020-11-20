@@ -32,7 +32,10 @@ echo("<h5>Sebastian Pająk</h5>");
      
       <a href="dataiczas.php">DATA I CZAS</a> 
       
+      <a href="formularz.html">FORMULARZ</a>
+
       <a href="danedobazy.html">DANE DO BAZY</a> 
+
       </br>
    </br>
 </br>
@@ -52,10 +55,10 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");
         echo("<th>data_urodzenia</th>");
-        echo("<th>nazwa_dzial</th>");
+       
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
