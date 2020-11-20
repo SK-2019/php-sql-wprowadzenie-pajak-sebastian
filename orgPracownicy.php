@@ -3,6 +3,17 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
+<body background="orgPracownicy.png">
+
+        <style>
+                body {
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+</style>
+
 <?php
 echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
 ?>
@@ -193,4 +204,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
   
   
   ?>
-  <img class="orgPracownicy" src="orgPracownicy.png">
+  
