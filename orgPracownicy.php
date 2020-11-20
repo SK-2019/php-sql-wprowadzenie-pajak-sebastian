@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="stylee.css">
+<meta charset="utf-8">
+  <link rel="stylesheet" href="stylee.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Organizacja i pracownicy</title>
 </head>
 
 

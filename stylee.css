@@ -149,3 +149,10 @@ tbody {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+f {
+text-decoration: none;
+background-color: #ff9999;
+padding: 1rem;
+border: 1px solid black;
+  border-radius: 4px;
+}

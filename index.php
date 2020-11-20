@@ -19,6 +19,7 @@
 <?php
 echo("<h5>Sebastian Pająk</h5>");
 ?>
+
    <div class="nav"> 
     
    
@@ -35,6 +36,8 @@ echo("<h5>Sebastian Pająk</h5>");
       <a href="formularz.html">FORMULARZ</a>
 
       <a href="danedobazy.html">DANE DO BAZY</a> 
+
+    
 
       </br>
    </br>
