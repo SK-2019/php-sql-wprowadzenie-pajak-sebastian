@@ -35,7 +35,7 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
      
       <a href="dataiczas.php">DATA I CZAS</a> 
       
-      <a href="formularz.html">FORMULARZ</a> 
+      <a href="danedobazy.html">DANE DO BAZY</a>
       </br>
    </br>
 </br>

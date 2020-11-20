@@ -32,7 +32,7 @@ echo("<h5>Sebastian Pająk</h5>");
      
       <a href="dataiczas.php">DATA I CZAS</a> 
       
-      <a href="formularz.html">FORMULARZ</a> 
+      <a href="danedobazy.html">DANE DO BAZY</a> 
       </br>
    </br>
 </br>
