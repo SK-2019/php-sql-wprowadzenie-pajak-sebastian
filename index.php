@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width">
   <title>strona glowna sebola</title>
 </head>
+<style>
+        body {
+        background-image:url(https://images6.alphacoders.com/706/thumb-1920-706735.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+  
+        }
+    </style>
 <?php
 echo("<h5>Sebastian Pająk</h5>");
 ?>
@@ -32,8 +42,9 @@ echo("<h5>Sebastian Pająk</h5>");
    <?php
  
 
-echo("<h2>Tabela pracownicy</h2>");
-$sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
+ echo("<h2>Tabela pracownicy</h2>");
+
+ $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
   require("conn.php");
@@ -50,4 +61,3 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
             
 ?>
-<img class="index" src="index.png">

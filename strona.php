@@ -4,6 +4,16 @@
         </head>
   
 </html> 
+<style>
+  body {
+  background-image:url(http://avante.biz/wp-content/uploads/The-Witcher-3-Wallpaper/The-Witcher-3-Wallpaper-040.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment: fixed;
+
+  }
+</style>
   
 <?php
         echo("Imie:".$_POST['imie']."<br>");
@@ -15,4 +25,3 @@
       mysqli_query($conn,$sql);
       mysqli_close($conn);
     ?>
-<img class="obraz3" src="obraz3.png">

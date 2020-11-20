@@ -3,6 +3,16 @@
 <head>
 <link rel="stylesheet" href="stylee.css">
 </head>
+<style>
+        body {
+        background-image:url(https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_pl_wallpaper_wallpaper_2_1920x1080_1433245773.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+  
+        }
+    </style>
 <?php
 echo("<h1>PRACOWNICY</h1>");
 ?>
@@ -82,4 +92,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
   ?>
-  <img class="pracownicy" src="pracownicy.png">
+ 
