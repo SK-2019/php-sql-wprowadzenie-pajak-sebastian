@@ -36,7 +36,7 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
       
       <a href="formularz.html">FORMULARZ</a>
 
-      <a href="Danedobazy.html">DANE DO BAZY</a> 
+      <a href="Danedobazy.php">DANE DO BAZY</a> 
       </br>
    </br>
 </br>

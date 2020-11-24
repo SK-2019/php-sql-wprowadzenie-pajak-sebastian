@@ -36,7 +36,7 @@ echo("<h5>Sebastian Pająk</h5>");
       
       <a href="formularz.html">FORMULARZ</a>
 
-      <a href="danedobazy.html">DANE DO BAZY</a> 
+      <a href="danedobazy.php">DANE DO BAZY</a> 
 
     
 

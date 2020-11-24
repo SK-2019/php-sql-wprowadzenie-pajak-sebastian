@@ -36,7 +36,7 @@ echo("<h1>DATA I CZAS</h1>");
 
       <a href="formularz.html">FORMULARZ</a>
       
-      <a href="danedobazy.html">DANE DO BAZY</a>
+      <a href="danedobazy.php">DANE DO BAZY</a>
       </br>
    </br>
 </br>
