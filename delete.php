@@ -31,5 +31,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-header("location: http://127.0.0.1/nauka/danedobazy.html");
+header("location: sebol.herokuapp.com/index.php");
 ?>
