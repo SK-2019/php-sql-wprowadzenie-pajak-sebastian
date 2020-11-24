@@ -31,5 +31,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-header("location: https://sebol.herokuapp.com/index.php");
+header("location: index.php");
 ?>
