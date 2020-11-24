@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="stylee1.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Dodawanie danych do bazy</title>
@@ -53,12 +53,11 @@ background-attachment: fixed;
      <input type="submit" value="Zapisz w zmiennej $_POST['id']">
   </form>
   
-</body>
+  
 </html>
+<div class="j">
 <?php
  
-
- echo("<h2>Tabela pracownicy</h2>");
 
  $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
@@ -80,6 +79,5 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
             
 ?>
-
-
-
+</div>
+</body>
