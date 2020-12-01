@@ -67,5 +67,26 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
                 echo("</tr>");
             }
         echo("</table>");
+
+        echo("<h2>Tabela pracownicy</h2>");
+
+ $sql = "SELECT * FROM biblTytul";
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+  require("conn.php");
+        echo("<table border=1>");
+        echo("<th>Id</th>");
+        echo("<th>Tytul</th>");
+        
+        
+        
+        
+       
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["id"]."</td><td>".$row["tytul"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
             
 ?>
