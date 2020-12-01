@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>strona glowna sebola</title>
+  <title>ksiazki</title>
 </head>
 
 <style>
@@ -37,37 +37,33 @@ echo("<h5>Sebastian Pająk</h5>");
       <a href="formularz.html">FORMULARZ</a>
 
       <a href="danedobazy.php">DANE DO BAZY</a> 
-      
-      <a href="ksiazki.php">KSIAZKI</a>
 
-    
+      <a href="ksiazki.php">KSIAZKI</a>
 
       </br>
    </br>
 </br>
 </div>    
-     
-   
-   <?php
+<?php
  
 
  echo("<h2>Tabela pracownicy</h2>");
 
- $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
+ $sql = "SELECT * FROM biblAutor";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
   require("conn.php");
         echo("<table border=1>");
         echo("<th>Id</th>");
         echo("<th>Imie</th>");
-        echo("<th>Zarobki</th>");
-        echo("<th>Data urodzenia</th>");
+        
+        
         
         
        
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");

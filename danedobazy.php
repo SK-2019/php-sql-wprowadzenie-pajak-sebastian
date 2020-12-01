@@ -76,8 +76,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
               echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>
   
   <td>
-  
-  
   <form action='delete.php' method='POST'>
        <input type='number' name='id' value='$row[id_pracownicy]'hidden></br>
        <input type='submit' value='x'>
