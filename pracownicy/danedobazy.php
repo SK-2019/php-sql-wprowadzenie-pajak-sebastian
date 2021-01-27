@@ -20,21 +20,21 @@ background-attachment: fixed;
 <div class="nav"> 
 </BR>
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-<a href="index.php"><b>STRONA GŁOWNA</b></a></h4>
+<a href="assets/index.php"><b>STRONA GŁOWNA</b></a></h4>
 </br>
 </br>
 </br>
-<a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+<a href="pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
  
-<a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
+<a href="pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
   
-<a href="pracownicy.php">PRACOWNICY</a> 
+<a href="pracownicy/pracownicy.php">PRACOWNICY</a> 
  
-  <a href="dataiczas.php">DATA I CZAS</a> 
+  <a href="pracownicy/dataiczas.php">DATA I CZAS</a> 
 
-  <a href="formularz.html">FORMULARZ</a>
+  <a href="pracownicy/formularz.html">FORMULARZ</a>
   
-  <a href="danedobazy.php">DANE DO BAZY</a>
+  <a href="pracownicy/danedobazy.php">DANE DO BAZY</a>
   </br>
 </br>
 </br>
