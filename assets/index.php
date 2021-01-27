@@ -28,7 +28,7 @@ echo("<h5>Sebastian Pająk</h5>");
       
     <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
     <a href="pracownicy.php">PRACOWNICY</a> 
      
