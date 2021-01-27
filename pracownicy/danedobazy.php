@@ -24,17 +24,17 @@ background-attachment: fixed;
 </br>
 </br>
 </br>
-<a href="pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+<a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
  
-<a href="pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
+<a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
   
-<a href="pracownicy/pracownicy.php">PRACOWNICY</a> 
+<a href="pracownicy.php">PRACOWNICY</a> 
  
-  <a href="pracownicy/dataiczas.php">DATA I CZAS</a> 
+  <a href="dataiczas.php">DATA I CZAS</a> 
 
-  <a href="pracownicy/formularz.html">FORMULARZ</a>
+  <a href="formularz.html">FORMULARZ</a>
   
-  <a href="pracownicy/danedobazy.php">DANE DO BAZY</a>
+  <a href="danedobazy.php">DANE DO BAZY</a>
   </br>
 </br>
 </br>
