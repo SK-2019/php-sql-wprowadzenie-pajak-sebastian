@@ -3,7 +3,7 @@
         <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>Strona</title>
+  <title>Sebastian Pajak</title>
         </head>
   
 </html> 

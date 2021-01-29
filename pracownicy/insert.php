@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>Insert</title>
+  <title>Sebastian Pajak</title>
   <div class="nav">
 </BR>
 <a href="pracownicy/danedobazy.php">DODAJ PRACOWNIKA</a>

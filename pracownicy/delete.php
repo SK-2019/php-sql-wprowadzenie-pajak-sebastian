@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="pracownicy/stylee.css">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuwanie</title>
+    <title>Sebastian Pajak</title>
 
 </head>
 <body>

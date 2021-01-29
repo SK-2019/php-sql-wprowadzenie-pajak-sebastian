@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>Organizacja i pracownicy</title>
+  <title>Sebastian Pajak</title>
 </head>
 
 
@@ -41,6 +41,7 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
       <a href="formularz.html">FORMULARZ</a>
       
       <a href="danedobazy.php">DANE DO BAZY</a>
+      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
       </br>
    </br>
 </br>

@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="stylee1.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Dodawanie danych do bazy</title>
+  <title>Sebastian Pajak</title>
 </head>
 <style>
   body {
@@ -20,7 +20,7 @@ background-attachment: fixed;
 <div class="nav"> 
 </BR>
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-<a href="assets/index.php"><b>STRONA GŁOWNA</b></a></h4>
+<a href="index.php"><b>STRONA GŁOWNA</b></a></h4>
 </br>
 </br>
 </br>
@@ -35,6 +35,7 @@ background-attachment: fixed;
   <a href="formularz.html">FORMULARZ</a>
   
   <a href="danedobazy.php">DANE DO BAZY</a>
+  <a href="biblioteka/ksiazki.php">KSIAZKI</a>
   </br>
 </br>
 </br>

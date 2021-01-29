@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>Funkcje agregujące</title>
+  <title>Sebastian Pajak</title>
 </head>
 <style>
         body {
@@ -37,6 +37,7 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
       <a href="formularz.html">FORMULARZ</a>
 
       <a href="Danedobazy.php">DANE DO BAZY</a> 
+      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
       </br>
    </br>
 </br>
