@@ -38,7 +38,7 @@ echo("<h5>Sebastian Pająk</h5>");
 
       <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a> 
       
-      <a href="/pracownicy/ksiazki.php">KSIAZKI</a>
+      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
 
     
 
