@@ -30,18 +30,18 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
     </br>
     </br>
     </br>
-    <a href="/nauka/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="/nauka/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-    <a href="/nauka/pracownicy/pracownicy.php">PRACOWNICY</a> 
+    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
      
-      <a href="/nauka/pracownicy/dataiczas.php">DATA I CZAS</a> 
+      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
 
-      <a href="/nauka/pracownicy/formularz.html">FORMULARZ</a>
+      <a href="/pracownicy/formularz.html">FORMULARZ</a>
       
-      <a href="/nauka/pracownicy/danedobazy.php">DANE DO BAZY</a>
-      <a href="/nauka/biblioteka/ksiazki.php">KSIAZKI</a>
+      <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a>
+      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
       </br>
    </br>
 </br>
