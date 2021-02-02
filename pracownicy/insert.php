@@ -9,7 +9,7 @@
   <div class="nav">
 </BR>
 <a href="pracownicy/danedobazy.php">DODAJ PRACOWNIKA</a>
-<a href="index.php">STRONA GLOWNA</a>
+<a href="/index.php">STRONA GLOWNA</a>
 </div>
 </head>
 <style>
