@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="/assets/stylee.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
 </head>
 
 <style>
