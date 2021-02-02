@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="stylee1.css">
+  <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
+  <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 
