@@ -1,9 +1,10 @@
 <html>
         <head>
         <meta charset="utf-8">
-  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="/assets/stylee.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
+  <link rel="shortcut icon" href="/favicon.ico">
         </head>
   
 </html> 
