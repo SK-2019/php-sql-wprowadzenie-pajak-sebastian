@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
 </head>
@@ -30,18 +30,18 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
     </br>
     </br>
     </br>
-    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="/nauka/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-    <a href="pracownicy.php">PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/pracownicy.php">PRACOWNICY</a> 
      
-      <a href="dataiczas.php">DATA I CZAS</a> 
+      <a href="/nauka/pracownicy/dataiczas.php">DATA I CZAS</a> 
 
-      <a href="formularz.html">FORMULARZ</a>
+      <a href="/nauka/pracownicy/formularz.html">FORMULARZ</a>
       
-      <a href="danedobazy.php">DANE DO BAZY</a>
-      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
+      <a href="/nauka/pracownicy/danedobazy.php">DANE DO BAZY</a>
+      <a href="/nauka/biblioteka/ksiazki.php">KSIAZKI</a>
       </br>
    </br>
 </br>

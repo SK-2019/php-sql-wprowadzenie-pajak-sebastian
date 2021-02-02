@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>strona glowna sebola</title>
+  <title>Sebastian Pajak</title>
 </head>
 
 <style>
@@ -26,19 +26,19 @@ echo("<h5>Sebastian Pająk</h5>");
    
     <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4></br>
       
-    <a href="pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="/nauka/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-    <a href="pracownicy/pracownicy.php">PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/pracownicy.php">PRACOWNICY</a> 
      
-      <a href="pracownicy/dataiczas.php">DATA I CZAS</a> 
+      <a href="/nauka/pracownicy/dataiczas.php">DATA I CZAS</a> 
       
-      <a href="pracownicy/formularz.html">FORMULARZ</a>
+      <a href="/nauka/pracownicy/formularz.html">FORMULARZ</a>
 
-      <a href="pracownicy/danedobazy.php">DANE DO BAZY</a> 
+      <a href="/nauka/pracownicy/danedobazy.php">DANE DO BAZY</a> 
       
-      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
+      <a href="/nauka/biblioteka/ksiazki.php">KSIAZKI</a>
 
     
 

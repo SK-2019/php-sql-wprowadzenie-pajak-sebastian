@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="pracownicy/stylee.css">
+  <link rel="stylesheet" href="/nauka/pracownicy/stylee.css">
   <meta name="viewport" content="width=device-width">
-  <title>ksiazki</title>
+  <title>Sebastian Pajak</title>
 </head>
 
 <style>
@@ -25,20 +25,23 @@ echo("<h5>Sebastian Pająk</h5>");
     
    
     <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4></br>
-      
-    <a href="pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+    <a href="index.php"><b>STRONA GŁOWNA</b></a></h4>
+</br>
+</br>
+</br>   
+    <a href="/nauka/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="/nauka/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-    <a href="pracownicy/pracownicy.php">PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/pracownicy.php">PRACOWNICY</a> 
      
-      <a href="pracownicy/dataiczas.php">DATA I CZAS</a> 
+      <a href="/nauka/pracownicy/dataiczas.php">DATA I CZAS</a> 
       
-      <a href="pracownicy/formularz.html">FORMULARZ</a>
+      <a href="/nauka/pracownicy/formularz.html">FORMULARZ</a>
 
-      <a href="pracownicy/danedobazy.php">DANE DO BAZY</a> 
+      <a href="/nauka/pracownicy/danedobazy.php">DANE DO BAZY</a> 
 
-      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
+      <a href="/nauka/biblioteka/ksiazki.php">KSIAZKI</a>
 
       </br>
    </br>
@@ -49,7 +52,7 @@ echo("<h5>Sebastian Pająk</h5>");
 
  echo("<h2>SELECT * FROM biblAutor</h2>");
 
- $sql = "SELECT * FROM biblAutor";
+ $sql = "SELECT * FROM biblautor";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
   require("conn.php");
@@ -70,7 +73,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 
         echo("<h2>SELECT * FROM biblTytul</h2>");
 
- $sql = "SELECT * FROM biblTytul";
+ $sql = "SELECT * FROM bibltytul";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
   require("conn.php");

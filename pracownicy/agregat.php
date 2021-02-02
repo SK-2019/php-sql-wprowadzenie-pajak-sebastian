@@ -26,18 +26,18 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
     </br>
     </br>
     </br>
-    <a href="orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
      
-    <a href="agregat.php">FUNKCJE AGREGUJĄCE</a> 
+    <a href="/nauka/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
       
-    <a href="pracownicy.php">PRACOWNICY</a> 
+    <a href="/nauka/pracownicy/pracownicy.php">PRACOWNICY</a> 
      
-      <a href="dataiczas.php">DATA I CZAS</a> 
+      <a href="/nauka/pracownicy/dataiczas.php">DATA I CZAS</a> 
       
-      <a href="formularz.html">FORMULARZ</a>
+      <a href="/nauka/pracownicy/formularz.html">FORMULARZ</a>
 
-      <a href="Danedobazy.php">DANE DO BAZY</a> 
-      <a href="biblioteka/ksiazki.php">KSIAZKI</a>
+      <a href="/nauka/pracownicy/Danedobazy.php">DANE DO BAZY</a> 
+      <a href="/nauka/biblioteka/ksiazki.php">KSIAZKI</a>
       </br>
    </br>
 </br>
