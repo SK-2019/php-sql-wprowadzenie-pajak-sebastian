@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <link rel="stylesheet" href="pracownicy/stylee.css">    
+    <link rel="stylesheet" href="/assets/stylee.css">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian Pajak</title>
+    <link rel="shortcut icon" href="/favicon.ico">
 
 </head>
 <body>
