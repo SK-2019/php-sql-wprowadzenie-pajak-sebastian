@@ -86,6 +86,7 @@ background-color: #ff9999;
 padding: 1rem;
 border: 1px solid black;
   border-radius: 4px;
+display: block;
 }
 
 a:hover {
