@@ -1,98 +1,98 @@
 body {
-    background-color: pink;
-  }
+  background-color: pink;
+}
 h5 {
-    color: #3a383e;
-    margin-left: 20px;
-    font-size: 32px;
-  }  
-  
-h1 {
-    text-shadow: 25px 15px 3px #b97d7d;
-    color: wheat;
-    margin-left: 20px;
-  }
-  
-  
-  .monospace {
-    font-family: "Lucida Console", Courier, monospace;
-  }
-  
-  
-  h2 {
-      color: white;
-    margin-left: 20px;
-    font-size: 27px;
-  }
-  
-  h3 {
-    color: white;
-    margin-left: 20px;
-    font-size: 30px;
-  }
-  
-  table, th, td{
-      border:1px solid blue;
-  }
-  table{
-      background-color: #ffffff;
+  color: #3a383e;
+  margin-left: 20px;
+  font-size: 32px;
+}  
 
-  }
-  th{
-      height: 25px;
-      text-align: center;
-      background-color:orange;
-  }
-  td{
-      text-align: left;
-  }
-  th, td{
-      border-bottom:1px solid green;
-      border-top:1px solid green;
-      border-left: 1px solid green;
-      border-right: 1px solid green;
-  }
-  tr:nth-child(even){background-color:lightblue;}
-  tr:hover{background-color:wheat;}
-  
-  .index {
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-      z-index: -1;
-  }
-  
+h1 {
+  text-shadow: 25px 15px 3px #b97d7d;
+  color: wheat;
+  margin-left: 20px;
+}
+
+
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+
+h2 {
+    color: white;
+  margin-left: 20px;
+  font-size: 27px;
+}
+
+h3 {
+  color: white;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+table, th, td{
+    border:1px solid blue;
+}
+table{
+    background-color: #ffffff;
+
+}
+th{
+    height: 25px;
+    text-align: center;
+    background-color:orange;
+}
+td{
+    text-align: left;
+}
+th, td{
+    border-bottom:1px solid green;
+    border-top:1px solid green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+}
+tr:nth-child(even){background-color:lightblue;}
+tr:hover{background-color:wheat;}
+
+.index {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
 .obraz2 {
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-	z-index: -1;
-  }
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+z-index: -1;
+}
 .obraz3 {
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-	z-index: -1;
-  }
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+z-index: -1;
+}
 a {
 text-decoration: none;
 background-color: #ff9999;
 padding: 1rem;
 border: 1px solid black;
-  border-radius: 4px;
+border-radius: 4px;
 display: block;
 }
 
 a:hover {
-  background-color: #ffe6e6;
-  }
-  
+background-color: #ffe6e6;
+}
+
 input {
 margin: 3px;
 }
@@ -108,49 +108,49 @@ font-weight: 1000;
 
 input{
 width: 140px;
-  padding: 10px 10px;
-  margin: 3px 0;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 4px;
-  
+padding: 10px 10px;
+margin: 3px 0;
+box-sizing: border-box;
+border: 1px solid black;
+border-radius: 4px;
+
 }
 
 
 .agregat {
-      height: 3000px;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-      z-index: -1;
+    height: 3000px;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
 }
 
 .pracownicy {
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-      z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
 }
 
 .dataiczas {
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      position: absolute;
-      z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
 }
 
 tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
 }
 
 f {
@@ -158,7 +158,7 @@ text-decoration: none;
 background-color: #ff9999;
 padding: 1rem;
 border: 1px solid black;
-  border-radius: 4px;
+border-radius: 4px;
 }
 
 .j {
@@ -172,4 +172,12 @@ align-items: center;
 position: fixed;
 height: 100%;
 width: 250px;
+}
+
+.con{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/stylee.css">
+  <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -17,6 +17,7 @@
   
         }
     </style>
+
 <?php
 echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 ?>
@@ -43,6 +44,7 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
    </br>
 </br>
 </div>    
+<div class="con">
 <?php
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
@@ -253,4 +255,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
 ?>
-
+</div>

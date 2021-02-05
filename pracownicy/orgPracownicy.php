@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
@@ -47,7 +47,7 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
    </br>
 </br>
 </div>    
-  
+<div class="con">
   <?php
   
 echo("<h2>Pracownicy z nazwa dzialu</h2>");
@@ -214,4 +214,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
   
   
   ?>
-  
+  </div>

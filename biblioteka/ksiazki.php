@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/stylee.css">
+  <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -48,6 +48,7 @@ echo("<h5>Sebastian Pająk</h5>");
    </br>
 </br>
 </div>    
+<div class="con">
 <?php
  
 
@@ -111,3 +112,4 @@ echo("<h3>".$sql."</h3>");
             }
         echo("</table>");
 ?>
+</div>

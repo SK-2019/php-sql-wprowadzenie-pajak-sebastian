@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +41,7 @@ background-attachment: fixed;
 </br>
 
 <body>
-  <form action="insert.php" method="POST">
+  <form action="/pracownicy/insert.php" method="POST">
     <input type="text" name="imie" placeholder="Imie">
     <br><input type="number" name="dzial" placeholder="Dzial">
     <br><input type="number" name="zarobki" placeholder="Zarobki">
@@ -50,7 +49,7 @@ background-attachment: fixed;
     <input type="submit" value="Dodaj">
   </form>
   <h3>usuwanie pracownika</h3>
-  <form action="delete.php" method="POST">
+  <form action="/pracownicy/delete.php" method="POST">
      <input type="number" name="id"></br>
      <input type="submit" value="Zapisz w zmiennej $_POST['id']">
   </form>
@@ -58,6 +57,7 @@ background-attachment: fixed;
   
 </html>
 <div class="j">
+<div class="con">
 <?php
  
 
@@ -91,5 +91,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
             
 ?>
+</div>
 </div>
 </body>

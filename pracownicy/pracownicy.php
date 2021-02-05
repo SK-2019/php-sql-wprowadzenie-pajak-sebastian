@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/stylee.css">
+  <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -42,7 +42,7 @@ echo("<h1>PRACOWNICY</h1>");
    </br>
 </br>
 </div>    
-  
+<div class="con">
   <?php
 
 echo("<h2>Pracownicy z działu 2</h2>");
@@ -98,4 +98,4 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
             }
         echo("</table>");
   ?>
- 
+ </div>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/stylee.css">
+  <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -18,10 +18,11 @@
   
         }
     </style>
+<div class="con">
 <?php
 echo("<h5>Sebastian Pająk</h5>");
 ?>
-
+</div>
    <div class="nav"> 
     
    
@@ -47,30 +48,4 @@ echo("<h5>Sebastian Pająk</h5>");
    </br>
 </br>
 </div>    
-     
-   
-   <?php
- 
 
- echo("<h2>Tabela pracownicy</h2>");
-
- $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
- $result=$conn->query($sql);
-  require("conn.php");
-        echo("<table border=1>");
-        echo("<th>Id</th>");
-        echo("<th>Imie</th>");
-        echo("<th>Zarobki</th>");
-        echo("<th>Data urodzenia</th>");
-        
-        
-       
-            while($row=$result->fetch_assoc()) {
-                echo("<tr>");
-                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-            
-?>
