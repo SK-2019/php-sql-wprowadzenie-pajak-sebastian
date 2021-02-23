@@ -50,7 +50,7 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
-  include("conn.php");
+  include("/pracownicy/conn.php");
  $result=$conn->query($sql);
         echo("<table border=1>");
      
