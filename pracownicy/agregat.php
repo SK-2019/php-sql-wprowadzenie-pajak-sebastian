@@ -46,12 +46,12 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 </div>    
 <div class="con">
 <?php
+  
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+  include("conn.php");
  $result=$conn->query($sql);
- require("conn.php");
         echo("<table border=1>");
      
         echo("<th>sum</th>");
