@@ -21,6 +21,12 @@
 <div class="con">
 <?php
 echo("<h5>Sebastian Pająk</h5>");
+  
+  
+          echo("<li> SERVER password: ".$password['password']);
+        echo("<li> SERVER username: ".$username['username']);
+        echo("<li> SERVER name: ".$servername['servername']);
+        echo("<li> SERVER dbname: ".$dbname['dbname']);
 ?>
 </div>
    <div class="nav"> 
