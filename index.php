@@ -20,7 +20,6 @@
     </style>
 <div class="con">
 <?php
-echo("test");
 echo("<h5>Sebastian Pająk</h5>");
   
   
