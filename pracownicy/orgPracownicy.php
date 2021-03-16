@@ -53,7 +53,7 @@ echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
 echo("<h2>Pracownicy z nazwa dzialu</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
-  $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+  $conn = new mysqli($servername, $username, $password, $dbname);
  $result=$conn->query($sql);
   require("conn.php");
         echo("<table border=1>");
