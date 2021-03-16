@@ -21,7 +21,7 @@
 <div class="con">
 <?php
 
-echo("<h5>Sebastian Pająk test</h5>");
+echo("<h5>Sebastian Pająk testtesttest</h5>");
   
   
           echo("<h5> SERVER password: </h5>".$password['password']);
