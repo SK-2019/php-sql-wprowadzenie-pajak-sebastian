@@ -24,10 +24,7 @@
 echo("<h5>Sebastian Pająk</h5>");
   
   
-          echo("<h5> SERVER password: </h5>".$password['password']);
-        echo("<h5> SERVER username: </h5>".$username['username']);
-        echo("<h5> SERVER name: </h5>".$servername['servername']);
-        echo("<h5> SERVER dbname: </h5>".$dbname['dbname']);
+          
 ?>
 </div>
    <div class="nav"> 
