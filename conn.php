@@ -1,9 +1,9 @@
 <?php
+require_once("config.php");
 
-
-$conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
+$conn=new mysqli($servername, $username, $password, $dbname);
         if($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
 
-?>     
+?>

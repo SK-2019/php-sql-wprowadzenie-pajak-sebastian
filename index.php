@@ -22,9 +22,11 @@
 <?php
 
 echo("<h5>Sebastian Pająk</h5>");
-  
-  
-          
+echo("<h5>test<h5>");
+
+
+$d=strtotime("now");
+          echo date("Y-m-d", $d)  ;          
 ?>
 </div>
    <div class="nav"> 

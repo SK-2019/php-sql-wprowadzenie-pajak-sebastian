@@ -13,7 +13,7 @@
 </body>
 </html>
 <?php
-require_once("pracownicy/conn.php");
+require_once("../conn.php");
 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);

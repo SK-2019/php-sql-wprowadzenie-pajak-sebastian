@@ -53,11 +53,10 @@ echo("<h5>Sebastian Pająk</h5>");
  
 
  echo("<h2>SELECT * FROM biblAutor</h2>");
-
+ require_once("../conn.php");
  $sql = "SELECT * FROM biblautor";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
-  require("conn.php");
         echo("<table border=1>");
         echo("<th>Id</th>");
         echo("<th>Imie</th>");
@@ -78,7 +77,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $sql = "SELECT * FROM bibltytul";
 $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
-  require("conn.php");
         echo("<table border=1>");
         echo("<th>Id</th>");
         echo("<th>Tytul</th>");
@@ -97,9 +95,8 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 
         $sql = "SELECT * from biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=autor_id and biblTytul_id=tytul_id";
 echo("<h3>".$sql."</h3>");
-  $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+  
  $result=$conn->query($sql);
-  require("conn.php");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>autor</th>");

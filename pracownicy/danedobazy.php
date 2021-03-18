@@ -39,7 +39,8 @@ background-attachment: fixed;
   </br>
 </br>
 </br>
-
+</div>
+<div class="con">
 <body>
   <form action="/pracownicy/insert.php" method="POST">
     <input type="text" name="imie" placeholder="Imie">
@@ -56,15 +57,15 @@ background-attachment: fixed;
   
   
 </html>
-<div class="j">
-<div class="con">
+
+
 <?php
  
-
+ require_once("../conn.php");
  $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
- $result=$conn->query($sql);
-  require("conn.php");
+ 
+ $result=$conn->query($sql) or die($conn->error);
+ 
         echo("<table border=1>");
         echo("<th>Id</th>");
         echo("<th>Imie</th>");
@@ -91,6 +92,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
             
 ?>
-</div>
+
 </div>
 </body>
