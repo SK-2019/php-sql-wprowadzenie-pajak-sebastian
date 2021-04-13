@@ -20,13 +20,7 @@
     </style>
 <div class="con">
 <?php
-
 echo("<h5>Sebastian Pająk</h5>");
-echo("<h5>gggg<h5>");
-
-
-$d=strtotime("now");
-          echo date("Y-m-d", $d)  ;          
 ?>
 </div>
    <div class="nav"> 
@@ -47,6 +41,8 @@ $d=strtotime("now");
       <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a> 
       
       <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
+
+      <a href="/pracownicy/flexbox.php">FLEXBOX</a>
 
     
 
