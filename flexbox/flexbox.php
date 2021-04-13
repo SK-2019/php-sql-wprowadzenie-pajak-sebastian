@@ -8,71 +8,103 @@
     <link rel="stylesheet" href="/assets/styleee2.css" />
   </head>
   <body>
-    <div class="con">
-        <div class="item a">
-            <div class="pros">
-                <div class="menu">
-                    <a class="linka" href="">adam</a>
-                    <a class="linka" href="">michał</a>
-                    <a class="linka" href="">kamil</a>
-                    <a class="linka" href="">jacek</a>
-                </div>
-            </div>
-        </div>
-        <div class="item b">
-            <div class="prostokat">
-                <div class="menu">
-                    <a class="linkb" href="">paweł</a>
-                    <a class="linkb" href="">kacper</a>
-                    <a class="linkb" href="">radek</a>
-                    <a class="linkb" href="">tomek</a>
-                </div>
-            </div>
-        </div>
-        <div class="item c">
-            <div class="prostokat">
-                <div class="menub">
-                    <a class="linkc" href="">marcin</a>
-                    <a class="linkc" href="">dom</a>
-                    <a class="linkc" href="">pies</a>
-                    <a class="linkc" href="">kot</a>
-                </div>
-            </div>
-        </div>
-        <div class="item d">
-            <div class="prostokat">
-                <div class="menub">
-                    <a class="linkd" href="">Link</a>
-                    <a class="linkd" href="">Link</a>
-                    <a class="linkd" href="">Link</a>
-                    <a class="linkd" href="">Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="item e">
-            <div class="prostokat"></div>
-        </div>
-        <div class="item f">
-            <div class="prostokat"></div>
-        </div>
-        <div class="item g">
-            <div class="prostokat"></div>
-        </div>
-        <div class="item h">
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-        </div>
-        <div class="item i">
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-        </div>
-        <div class="item j">
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-        </div>
-        <div class="item k">
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
+      <h2>    </h2>
+    <div class="cont">
+        <div class="nav1">
+            <a class="flex1" href="strona">Kot</a>
+            <a class="flex1" href="strona">Pies</a>
+            <a class="flex1" href="strona">Kaczka</a>
+            <a class="flex1" href="strona">Samochód</a>
         </div>
     </div>
-</body>
+    <h2>    </h2>
+    <div class="cont2">
+        <div class="nav1">
+            <a class="flex2" href="strona">Trenbolon</a>
+            <a class="flex2" href="strona">Testosteron</a>
+            <a class="flex2" href="strona">Deca</a>
+            <a class="flex2" href="strona">Oxandrolon</a>
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont3">
+        <div class="nav">
+            <a class="flex3" href="strona">Czipsy</a>
+            <a class="flex3" href="strona">Wyciskanie</a>
+            <a class="flex3" href="strona">Przysiad</a>
+            <a class="flex3" href="strona">MartwyCiąg</a>
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont4">
+        <div class="nav">
+            <a class="flex4" href="strona">Adam</a>
+            <a class="flex4" href="strona">Michał</a>
+            <a class="flex4" href="strona">Kacper</a>
+            <a class="flex4" href="strona">Kamil</a>
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont5">
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont6">
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont7">
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont8">
+        <div class="nav">
+            
+        </div>
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont9">
+        <div class="nav">
+            
+        </div>
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont10">
+        <div class="nav">
+            
+        </div>
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont11">
+        <div class="nav">
+            
+        </div>
+        <div class="nav">
+            
+        </div>
+    </div>
+    <h2>    </h2>
+    <div class="cont12">
+        <div class="nav">
+            
+        </div>
+        <div class="nav">
+            
+        </div>
+    </div>
+    </body>
