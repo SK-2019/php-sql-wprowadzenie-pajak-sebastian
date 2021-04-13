@@ -42,7 +42,7 @@ echo("<h5>Sebastian Pająk</h5>");
       
       <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
 
-      <a href="/flexbox/flexbox.php">FLEXBOX</a>
+      <a href="/flexbox/index.html">FLEXBOX</a>
 
     
 
