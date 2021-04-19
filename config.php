@@ -1,8 +1,11 @@
 <?php
 
-$servername = "db";
-$username= "root";
-$password = "root";
-$dbname = "pracownicy";
+
+$servername = "remotemysql.com";
+$username = "F1aJmbwBvG";
+$password = "cmCvZxLITd";
+$dbname = "F1aJmbwBvG"; 
+
+
 
 ?>
