@@ -22,28 +22,16 @@ echo("<h1>DATA I CZAS</h1>");
 ?>
 <div class="nav"> 
     </BR>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-    <a href="/index.php"><b>STRONA GŁOWNA</b></a></h4>
-    </br>
-    </br>
-    </br>
-    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
-     
-    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
-      
-    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
-     
-      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
-
-      <a href="/pracownicy/formularz.html">FORMULARZ</a>
-      
-      <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a>
-      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
+    
       </br>
    </br>
 </br>
 </div>
-<div class="con">    
+<div class="con"> 
+<?php
+include("../header.php");
+include("../menu.php");
+?>   
  <?php
 require_once("../conn.php");
 echo("<h2>Wiek poszczególnych pracowników (w latach)</h2>");

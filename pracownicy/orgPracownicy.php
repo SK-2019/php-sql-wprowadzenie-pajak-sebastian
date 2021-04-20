@@ -28,8 +28,11 @@
 </div>
 
 <?php
+include("../header.php");
+include("../menu.php");
+?>
+<?php
 echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
-include("../menu.php")
 ?>
     
   <?php

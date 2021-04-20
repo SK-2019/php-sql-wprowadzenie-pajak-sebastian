@@ -17,12 +17,22 @@
   
         }
     </style>
-
+<div class="nav"> 
+    </br>
+    
+      </br>
+   </br>
+</br>
+</div>    
+<div class="con">
+<?php
+include("../header.php");
+include("../menu.php");
+?>
 <?php
 echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 ?>
 
-<?php include("../menu.php") ?>
 <?php
 require_once("../conn.php");
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
