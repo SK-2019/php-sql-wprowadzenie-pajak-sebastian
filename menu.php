@@ -17,7 +17,7 @@
       
       <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
 
-      <a href="/flexbox/flexbox.php">FLEXBOX</a>
+      <a href="/flexbox/index.html">FLEXBOX</a>
 
       <a href="/biblioteka/wieledowielu.php">Relacja wiele do wielu</a>
     
