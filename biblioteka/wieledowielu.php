@@ -35,8 +35,8 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 </div>    
 <div class="con">
 <?php
+include("../header.php");
 include("../menu.php");
-include("../notion.php");
 ?>
 <?php
   require_once("../conn.php");

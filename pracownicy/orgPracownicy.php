@@ -19,14 +19,14 @@
   
         }
     </style>
-        <div class="con">
+        
 </div>
    <div class="nav">
    </br>
    </br>
 </br>
 </div>
-
+<div class="con">
 <?php
 include("../header.php");
 include("../menu.php");

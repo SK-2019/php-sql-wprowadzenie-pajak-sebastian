@@ -17,12 +17,15 @@
   
         }
     </style>
+    
 <div class="nav"> 
     </br>
     
       </br>
+      
    </br>
 </br>
+
 </div>    
 <div class="con">
 <?php
