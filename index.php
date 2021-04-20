@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
-
-<style>
+  <style>
         body {
         background-image:url(https://images6.alphacoders.com/706/thumb-1920-706735.png);
     background-size:cover;
@@ -18,17 +16,13 @@
   
         }
     </style>
-</div>
-   <div class="nav">
-   </br>
-   </br>
-</br>
-</div>
-<div class="con">
-<?php
-include("header.php");
-include("menu.php");
+</head>
 
-?>
-    
+<body>
+  <div class="nav">
+</div>
+  <div class="con">
+<?php include("header.php"); ?>
+<?php include("menu.php"); ?>
+</div>
 
