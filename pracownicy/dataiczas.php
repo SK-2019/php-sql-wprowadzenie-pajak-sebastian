@@ -17,9 +17,7 @@
   
         }
     </style>
-<?php
-echo("<h1>DATA I CZAS</h1>");
-?>
+
 <div class="nav"> 
     </BR>
     
@@ -32,6 +30,9 @@ echo("<h1>DATA I CZAS</h1>");
 include("../header.php");
 include("../menu.php");
 ?>   
+<?php
+echo("<h1>DATA I CZAS</h1>");
+?>
  <?php
 require_once("../conn.php");
 echo("<h2>Wiek poszczególnych pracowników (w latach)</h2>");

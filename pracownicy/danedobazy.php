@@ -18,11 +18,13 @@ background-attachment: fixed;
   }
 </style>
 <div class="nav"> 
-</BR>
-
-  </br>
+    </BR>
+    
+      </br>
+   </br>
 </br>
-</br>
+</div>
+<div class="con"> 
 
 <?php
 include("../header.php");
@@ -48,11 +50,9 @@ include("../menu.php");
 <div class="con">
 <?php
  
-
+ require_once("../conn.php");
  $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
-  require("conn.php");
         echo("<table border=1>");
         echo("<th>Id</th>");
         echo("<th>Imie</th>");
@@ -79,6 +79,5 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("</table>");
             
 ?>
-</div>
 </div>
 </body>

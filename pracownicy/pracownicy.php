@@ -17,9 +17,7 @@
   
         }
     </style>
-<?php
-echo("<h1>PRACOWNICY</h1>");
-?>
+
 <div class="nav"> 
     </br>
     
@@ -31,6 +29,9 @@ echo("<h1>PRACOWNICY</h1>");
 <?php
 include("../header.php");
 include("../menu.php");
+?>
+<?php
+echo("<h1>PRACOWNICY</h1>");
 ?>
   <?php
 
