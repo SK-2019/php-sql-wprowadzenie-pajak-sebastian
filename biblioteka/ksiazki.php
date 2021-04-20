@@ -18,15 +18,12 @@
   
         }
     </style>
-<?php
-echo("<h5>Sebastian Pająk</h5>");
-?>
+
 
    <div class="nav"> 
     
    
-    <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a></h4></br>
-    <a href="/index.php"><b>STRONA GŁOWNA</b></a></h4>
+    
 </br>
 </br>
 </br>   

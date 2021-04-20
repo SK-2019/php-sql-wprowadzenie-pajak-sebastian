@@ -18,13 +18,10 @@
         }
     </style>
 
-<?php
-echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
-?>
+
 <div class="nav"> 
     </br>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-    <a href="/index.php"><b>STRONA GŁOWNA</b></a></h4>
+    
     </br>
     </br>
     </br>
