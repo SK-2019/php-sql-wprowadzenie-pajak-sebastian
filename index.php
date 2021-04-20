@@ -26,7 +26,6 @@
 </div>
 <div class="con">
 <?php
-echo("<h5>Sebastian Pająk</h5>");
 include("header.php");
 include("menu.php");
 
