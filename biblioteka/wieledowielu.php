@@ -28,23 +28,16 @@ echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
     </br>
     </br>
     </br>
-    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
-     
-    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
-      
-    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
-     
-      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
-      
-      <a href="/pracownicy/formularz.html">FORMULARZ</a>
-
-      <a href="/pracownicy/Danedobazy.php">DANE DO BAZY</a> 
-      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
+    
       </br>
    </br>
 </br>
 </div>    
 <div class="con">
+<?php
+include("../menu.php");
+include("../notion.php");
+?>
 <?php
   require_once("../conn.php");
 echo("<h2>Autorzy</h2>");

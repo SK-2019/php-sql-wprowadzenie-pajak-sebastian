@@ -49,7 +49,7 @@ require_once("../conn.php");
 echo("<h2>Wiek poszczególnych pracowników (w latach)</h2>");
  $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
- $result=$conn->query($sql) or die($conn->error);
+ $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>nazwa_dzial</th>");

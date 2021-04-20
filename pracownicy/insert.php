@@ -22,30 +22,69 @@
   
         }
     </style>
-
 <?php
-echo("<h1>jestes w insert.php </h1>");
-echo "<li>Imie: ". $_POST['name'];
-echo "<li>Dzial: ". $_POST['dzial'];
-echo "<li>zarobki: ". $_POST['zarobki'];
-echo "<li>data urodzenia: ". $_POST['data_urodzenia'];
+echo("<h1>jestes w insert.php</h1>");
 
 
-require_once("../conn.php");
-$sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) 
-        VALUES (null,'".$_POST['imie']."', ".$_POST['dzial'].", ".$_POST['zarobki'].",'".$_POST['data_urodzenia']."')";
 
-//obsługa błędów zapisu do bazy
-if ($conn->query($sql) === TRUE) {
-  echo("<li>New record created successfully</li>");
-  header('Location: danedobazy.php');
-} else {
-//informacja o ewentualnych błędach
-  echo "Error: " . $sql . "<br>" . $conn->error;
+$servername = "remotemysql.com";
+$username = "F1aJmbwBvG";
+$password = "cmCvZxLITd";
+$dbname = "F1aJmbwBvG";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 
+$sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) 
+       VALUES (null,'".$_POST['imie']."','".$_POST['dzial']."' , '".$_POST['zarobki']."','".$_POST['data_urodzenia']."')";
+
+echo "<h2>".$sql;
+
+
+
+if ($conn->query($sql) === TRUE) {
+  echo("<h1>    </h1>");
+  echo ("<h1>Nowy pracownik dodany :)</h1>");
+} 
+else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo("<h1>Nie udało się :C</h1>");
+}
+
+
+
+
 $conn->close();
+
 ?>
+<?php
+
+$sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
+$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ $result=$conn->query($sql);
+  require("conn.php");
+        echo("<table border=1>");
+        echo("<th>Id</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data urodzenia</th>");
+        
+        
+        
+       
+            while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                  
+                    echo("</tr>");
+                    
+                    
+            }
+            
+        echo("</table>");
+        ?>
         
 </body>
 </html>

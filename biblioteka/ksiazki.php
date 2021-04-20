@@ -30,19 +30,7 @@ echo("<h5>Sebastian Pająk</h5>");
 </br>
 </br>
 </br>   
-    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
-     
-    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
-      
-    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
-     
-      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
-      
-      <a href="/pracownicy/formularz.html">FORMULARZ</a>
-
-      <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a> 
-
-      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
+    
 
       </br>
    </br>
@@ -50,12 +38,16 @@ echo("<h5>Sebastian Pająk</h5>");
 </div>    
 <div class="con">
 <?php
+include("../menu.php");
+include("../notion.php");
+?>
+<?php
  
 
  echo("<h2>SELECT * FROM biblAutor</h2>");
- require_once("../conn.php");
+require_once("../conn.php");
  $sql = "SELECT * FROM biblautor";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+ echo("<h3>".$sql."</h3>");
  $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>Id</th>");
@@ -75,7 +67,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
         echo("<h2>SELECT * FROM biblTytul</h2>");
 
  $sql = "SELECT * FROM bibltytul";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
  $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>Id</th>");
@@ -95,7 +86,6 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
 
         $sql = "SELECT * from biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=autor_id and biblTytul_id=tytul_id";
 echo("<h3>".$sql."</h3>");
-  
  $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>id</th>");

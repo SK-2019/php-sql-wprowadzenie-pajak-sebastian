@@ -19,41 +19,26 @@
   
         }
     </style>
-        
+        <div class="con">
+</div>
+   <div class="nav">
+   </br>
+   </br>
+</br>
+</div>
 
 <?php
 echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
+include("../menu.php")
 ?>
-    <div class="nav"> 
-  </br>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-    <a href="/index.php"><b>STRONA GŁOWNA</b></a></h4>
-    </br>
-    </br>
-    </br>
-    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
-     
-    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
-      
-    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
-     
-      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
-
-      <a href="/pracownicy/formularz.html">FORMULARZ</a>
-      
-      <a href="/pracownicy/danedobazy.php">DANE DO BAZY</a>
-      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
-      </br>
-   </br>
-</br>
-</div>    
-<div class="con">
+    
   <?php
   require_once("../conn.php");
 echo("<h2>Pracownicy z nazwa dzialu</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
- $result=$conn->query($sql);
+$result=$conn->query($sql);  
+
         echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>zarobki</th>");

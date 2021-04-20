@@ -21,32 +21,10 @@
 <?php
 echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 ?>
-<div class="nav"> 
-    </br>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-pajak-sebastian"><b>GITHUB</b></a>
-    <a href="/index.php"><b>STRONA GŁOWNA</b></a></h4>
-    </br>
-    </br>
-    </br>
-    <a href="/pracownicy/orgPracownicy.php">ORGANIZACJA I PRACOWNICY</a> 
-     
-    <a href="/pracownicy/agregat.php">FUNKCJE AGREGUJĄCE</a> 
-      
-    <a href="/pracownicy/pracownicy.php">PRACOWNICY</a> 
-     
-      <a href="/pracownicy/dataiczas.php">DATA I CZAS</a> 
-      
-      <a href="/pracownicy/formularz.html">FORMULARZ</a>
 
-      <a href="/pracownicy/Danedobazy.php">DANE DO BAZY</a> 
-      <a href="/biblioteka/ksiazki.php">KSIAZKI</a>
-      </br>
-   </br>
-</br>
-</div>    
-<div class="con">
+<?php include("../menu.php") ?>
 <?php
-  require_once("../conn.php");
+require_once("../conn.php");
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
@@ -64,7 +42,6 @@ echo("<h3>".$sql."</h3>");
  echo("<h2>Suma zarobkow wszystkich kobiet</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie like 'a%')";
 echo("<h3>".$sql."</h3>");
-
  $result=$conn->query($sql);
         echo("<table border=1>");
      
@@ -79,8 +56,7 @@ echo("<h3>".$sql."</h3>");
  echo("<h2>Suma zarobkow mezczyzn pracujacych w dziale 2 i 3</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org and imie not like 'a%') and (dzial = 2 or dzial = 3)";
 echo("<h3>".$sql."</h3>");
-
- $result=$conn->query($sql);
+$result=$conn->query($sql);
         echo("<table border=1>");
      
         echo("<th>sum</th>");
@@ -94,7 +70,6 @@ echo("<h3>".$sql."</h3>");
  echo("<h2>Suma zarobkow mezczyzn</h2>");
  $sql = "SELECT avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org and imie not like 'a%')";
 echo("<h3>".$sql."</h3>");
-
  $result=$conn->query($sql);
         echo("<table border=1>");
      
@@ -207,7 +182,6 @@ echo("<h3>".$sql."</h3>");
  echo("<h2>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h2>");
  $sql = "SELECT nazwa_dzial, avg(zarobki) as avg FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie not like '%a') GROUP BY dzial HAVING avg(zarobki)>30";
 echo("<h3>".$sql."</h3>");
-
  $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>nazwa_dzial</th>");
