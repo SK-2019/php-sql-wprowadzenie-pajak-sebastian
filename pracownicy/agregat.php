@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
 <style>
         body {
         background-image:url(https://get.wallhere.com/photo/The-Witcher-3-Wild-Hunt-The-Witcher-3-Wild-Hunt-Blood-and-Wine-The-Witcher-3-Wild-Hunt-Hearts-of-Stone-Geralt-of-Rivia-1694285.jpg);
@@ -17,25 +16,17 @@
   
         }
     </style>
-    
-<div class="nav"> 
-    </br>
-    
-      </br>
-      
-   </br>
-</br>
-
-</div>    
-<div class="con">
+    </head>
+<div class="nav">    
 <?php
 include("../header.php");
 include("../menu.php");
 ?>
+</div>
 <?php
 echo("<h1>FUNKCJE AGREGUJĄCE</h1>");
 ?>
-
+<div class="con">
 <?php
 require_once("../conn.php");
 echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");

@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
 <style>
   body {
   background-image:url(https://wallpapercart.com/wp-content/uploads/2020/03/Video-Game-The-Witcher-3-Wild-Hunt-The-Witcher-Geralt-of-Rivia-HD-Wallpaper-Background-Imagess.jpg);
@@ -17,19 +16,14 @@ background-attachment: fixed;
 
   }
 </style>
+</head>
 <div class="nav"> 
-    </BR>
-    
-      </br>
-   </br>
-</br>
-</div>
-<div class="con"> 
-
 <?php
 include("../header.php");
 include("../menu.php");
 ?>
+</div>
+<div class="con">
 <body>
   <form action="/pracownicy/insert.php" method="POST">
     <input type="text" name="imie" placeholder="Imie">
@@ -44,8 +38,8 @@ include("../menu.php");
      <input type="submit" value="Zapisz w zmiennej $_POST['id']">
   </form>
   
-  
 </html>
+</div>
 <div class="j">
 <div class="con">
 <?php

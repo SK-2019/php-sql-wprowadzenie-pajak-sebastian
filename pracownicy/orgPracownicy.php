@@ -19,22 +19,17 @@
   
         }
     </style>
-        
-</div>
-   <div class="nav">
-   </br>
-   </br>
-</br>
-</div>
-<div class="con">
+</head>
+<div class="nav">
 <?php
 include("../header.php");
 include("../menu.php");
 ?>
+</div>
 <?php
 echo("<h1>ORGANIZACJA I PRACOWNICY</h1>");
 ?>
-    
+    <div class="con">
   <?php
   require_once("../conn.php");
 echo("<h2>Pracownicy z nazwa dzialu</h2>");

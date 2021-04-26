@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
 <style>
         body {
         background-image:url(https://images7.alphacoders.com/878/878080.png);
@@ -17,22 +16,17 @@
   
         }
     </style>
-
-<div class="nav"> 
-    </BR>
-    
-      </br>
-   </br>
-</br>
-</div>
-<div class="con"> 
+    </head>
+    <div class="nav"> 
 <?php
 include("../header.php");
 include("../menu.php");
 ?>   
+    </div>
 <?php
 echo("<h1>DATA I CZAS</h1>");
 ?>
+    <div class="con">
  <?php
 require_once("../conn.php");
 echo("<h2>Wiek poszczególnych pracowników (w latach)</h2>");

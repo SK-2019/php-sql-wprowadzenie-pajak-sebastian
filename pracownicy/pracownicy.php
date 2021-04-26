@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
 <style>
         body {
         background-image:url(https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_pl_wallpaper_wallpaper_2_1920x1080_1433245773.jpg);
@@ -17,22 +16,17 @@
   
         }
     </style>
-
-<div class="nav"> 
-    </br>
-    
-      </br>
-   </br>
-</br>
-</div>    
-<div class="con">
+    </head>
+    <div class="nav">    
 <?php
 include("../header.php");
 include("../menu.php");
 ?>
+    </div>  
 <?php
 echo("<h1>PRACOWNICY</h1>");
 ?>
+<div class="con">
   <?php
 
 require_once("../conn.php");
