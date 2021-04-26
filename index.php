@@ -20,9 +20,7 @@
 
 <body>
   <div class="nav">
-</div>
-  <div class="con">
 <?php include("header.php"); ?>
 <?php include("menu.php"); ?>
-</div>
-
+  </div>
+</body>

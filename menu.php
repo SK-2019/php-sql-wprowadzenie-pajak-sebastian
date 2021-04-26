@@ -19,7 +19,7 @@
 
       <a href="/flexbox/index.html">FLEXBOX</a>
 
-      <a href="/biblioteka/wieledowielu.php">Relacja wiele do wielu</a>
+      <a href="/cwiczenia/wieledowielunav.php">WIELE DO WIELU</a>
     
 
       
