@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sebastian Pajak</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
-
 <style>
         body {
         background-image:url(https://images6.alphacoders.com/706/thumb-1920-706735.png);
@@ -18,30 +16,15 @@
   
         }
     </style>
-
-
-   <div class="nav"> 
-    
-   
-    
-</br>
-</br>
-</br>   
-    
-
-      </br>
-   </br>
-</br>
-</div>    
-<div class="con">
-<?php
+</head>
+<div class="nav">
+    <?php
 include("../header.php");
 include("../menu.php");
 ?>
+    </div>
 <?php
- 
-
- echo("<h2>SELECT * FROM biblAutor</h2>");
+echo("<h2>SELECT * FROM biblAutor</h2>");
 require_once("../conn.php");
  $sql = "SELECT * FROM biblautor";
  echo("<h3>".$sql."</h3>");
