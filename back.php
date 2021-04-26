@@ -1,0 +1,1 @@
+<a href="../cwiczenia/wieledowielunav.php">POWRÓT</a>
