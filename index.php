@@ -4,7 +4,7 @@
 <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/stylee1.css">
   <meta name="viewport" content="width=device-width">
-  <title>Sebastian Pajak</title>
+  <title>Sebastian Pajakk</title>
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <style>
         body {
