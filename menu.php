@@ -20,6 +20,9 @@
       <a href="/flexbox/index.html">FLEXBOX</a>
 
       <a href="/cwiczenia/wieledowielunav.php">WIELE DO WIELU</a>
+
+      <a href="/cwiczenia/galeria.php">GALERIA</a>
+
     
 
       
