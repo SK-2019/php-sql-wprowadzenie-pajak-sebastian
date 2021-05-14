@@ -25,14 +25,31 @@
   <body>
     <h1>
       <i class="fas fa-biking"></i>
-      08 - Galeria
+      Galeria
     </h1>
     <h2>Galeria:</h2>
 
     <div class="gallery row">
-      <div class="image foto01">1</div>
-      <div class="image foto02">2</div>
-      <div class="image foto03">3</div>
+      <a href="#" class="image foto01">
+        <span class="foto01_title">RockstarGames</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto02">
+        <span class="foto01_title">TheLastOfUs</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto03"
+        ><span class="foto01_title">Gwint</span>
+        <span class="foto01_price">cena: 1299 zł</span>
+      </a>
+      <a href="#" class="image foto04">
+        <span class="foto01_title">bulBul</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto05">
+        <span class="foto01_title">Postać</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
     </div>
 
     <div class="gallery row">
@@ -46,13 +63,39 @@
       </a>
       <a href="#" class="image foto03"
         ><span class="foto01_title">Gwint</span>
-        <span class="foto01_price">cena: 1299 zł</span></a
-      >
+        <span class="foto01_price">cena: 1299 zł</span>
+      </a>
+      <a href="#" class="image foto04">
+        <span class="foto01_title">bulBul</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto05">
+        <span class="foto01_title">Postać</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
     </div>
+
     <div class="gallery row">
-      <div class="image foto01">1</div>
-      <div class="image foto02">2</div>
-      <div class="image foto03">3</div>
+      <a href="#" class="image foto01">
+        <span class="foto01_title">RockstarGames</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto02">
+        <span class="foto01_title">TheLastOfUs</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto03"
+        ><span class="foto01_title">Gwint</span>
+        <span class="foto01_price">cena: 1299 zł</span>
+      </a>
+      <a href="#" class="image foto04">
+        <span class="foto01_title">bulBul</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
+      <a href="#" class="image foto05">
+        <span class="foto01_title">Postać</span>
+        <span class="foto01_price">cena: 299 zł</span>
+      </a>
     </div>
   </body>
 </html>
